@@ -1,8 +1,8 @@
 ## blog.rhohub.com
 
-### How to add a new post
+### How to manage posts
 
-Create post:
+Create/Edit post:
 
      $ mate _posts/year-month-date-title-of-post.textile
 
@@ -12,7 +12,7 @@ Regenerate site:
      $ jekyll
 
 
-Save changes to Heroku
+Save changes to Heroku:
 
      $ git commit -m "New post"
      $ git push heroku
