@@ -13,6 +13,8 @@ pygments:    false
 markdown:    maruku
 permalink:   date
 
+exclude: Gemfile, Gemfile.lock, README.md, config.ru
+
 maruku:
   use_tex:    false
   use_divs:   false
