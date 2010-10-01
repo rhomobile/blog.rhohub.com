@@ -4,7 +4,7 @@ html, body {
 	padding:0;
 }
 body {
-	background:url("images/dash_header.png") repeat-x scroll 0 0 transparent;
+	background:url("../images/dash_header.png") repeat-x scroll 0 0 transparent;
 	color:#000000;
 	font-family:Arial,sans-serif,Helvetica;
 	font-size:12px;
@@ -21,7 +21,7 @@ p {
 	line-height:20px;
 }
 .line {
-	background:url("images/line.jpg") no-repeat scroll center top #FFFFFF;
+	background:url("../images/line.jpg") no-repeat scroll center top #FFFFFF;
 	float:left;
 	height:45px;
 	width:920px;
@@ -46,14 +46,14 @@ p {
 	top:9px;
 }
 .header .logos a.logo_rhomobile {
-	background:url("images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
+	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
 	width:56px;
 }
 .header .logos a.logo_rhohub {
-	background:url("images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
+	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
