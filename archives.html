@@ -4,7 +4,7 @@ layout: default
 ---
 <dt>
 {% for post in site.posts %}
-<dd><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></dd>
+<dd><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4> - {{ post.date | date_to_string }}</dd>
 {% endfor %}
 </dt>
 <br/>
