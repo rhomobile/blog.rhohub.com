@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RhoHub adds iPhone/iPad build capability
+title: BlackBerry validates the "write native apps with web skills" category that Rhodes created
 ---
 
 h1. "{{ page.title }}":{{ page.url }}
