@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
-<div id="post">
-{{ content }}
+<div class="post">
+	<div class="date">
+		<span class="month">{{ page.date | date: '%B' }}</span>
+		<span class="day">{{ page.date | date: '%d' }}</span>
+		<span>{{ page.date | date: '%Y'}}</span>
+	</div><!-- END date -->
+
+	<div class="post_content">
+		{{ content }}
+	</div><!--END post_content -->
 </div>
