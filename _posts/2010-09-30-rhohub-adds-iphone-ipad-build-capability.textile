@@ -4,15 +4,9 @@ title: RhoHub adds iPhone/iPad build capability
 ---
 
 <div class="post">
-	<div class="date">
-		
-%(month){{ page.date | date: '%B' }}% %(day){{ page.date | date: '%d' }}% %{{ page.date | date: '%Y' }}%
-	
-	</div><!-- END date -->
-
-	<div class="post_content">
-		
-h1. "{{ page.title }}":{{ page.url }}
+	<div class="date">%(month){{ page.date | date: '%B' }}% %(day){{ page.date | date: '%d' }}% %{{ page.date | date: '%Y' }}%</div>
+	<div class="post_content">	
+h1."{{ page.title }}":{{ page.url }}
 
 Hello Smartphone Developers,
 
