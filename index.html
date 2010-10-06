@@ -4,7 +4,19 @@ title: RhoHub
 ---
 
 {% for post in site.posts limit:5 %}
-	{{ post.content }}
+
+<div class="post">
+	<div class="date">
+		<span class="month">{{ post.date | date: '%B' }}</span>
+		<span class="day">{{ post.date | date: '%d' }}</span>
+		<span>{{ post.date | date: '%Y'}}</span>
+	</div><!-- END date -->
+
+	<div class="post_content">
+		{{ post.content }}
+	</div><!--END post_content -->
+</div>
+
 {% endfor %}
 
 <a href="/archives.html">&lt;&lt; Archives</a> | <a href="/atom.xml" title="RSS feed">RSS Feed</a> 
