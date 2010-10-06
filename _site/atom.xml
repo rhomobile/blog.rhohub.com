@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-06T15:00:53-05:00</updated>
+ <updated>2010-10-06T15:02:19-05:00</updated>
  <id></id>
 
  
@@ -17,7 +17,7 @@
    <id>/2010/09/30/rhohub-adds-iphone-ipad-build-capability</id>
    <content type="html">&lt;div class=&quot;post&quot;&gt;
 &lt;div class=&quot;date&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;month&quot;&gt;September&lt;/span&gt;%(day)30%%2010%&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;month&quot;&gt;September&lt;/span&gt; &lt;span class=&quot;day&quot;&gt;30&lt;/span&gt; &lt;span&gt;2010&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!-- END date --&gt;&lt;/p&gt;
 &lt;div class=&quot;post_content&quot;&gt;
 &lt;p&gt;h1. &lt;a href=&quot;/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/p&gt;
