@@ -4,16 +4,12 @@ title: RhoHub
 ---
 
 <div id="home">
-  <ul class="posts">
 	{% for post in site.posts limit:5 %}
-	<li>
 		<div class="post">
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<div id="date">published {{ post.date | date_to_string }}</div>
+			<div id="date">{{ post.date | date_to_string }}</div>
 			{{ post.content }}
 		</div>
-	</li>
 	{% endfor %}
-  </ul>
   <a href="/archives.html">&lt;&lt; Archives</a> | <a href="/atom.xml" title="RSS feed">RSS Feed</a> 
 </div>

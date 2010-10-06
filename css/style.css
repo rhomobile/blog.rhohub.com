@@ -4,31 +4,20 @@ html, body {
 	padding:0;
 }
 body {
-	background:url("/images/dash_header.png") repeat-x scroll 0 0 transparent;
+	background:url("images/dash_header.png") repeat-x scroll 0 0 transparent;
 	color:#000000;
-	font-family:Arial,sans-serif,Helvetica;
-	font-size:12px;
+	font-family:Tahoma,Helvetica,sans-serif;
+	font-size:14px;
 }
 h2 {
-color:#333333;
-font-size:18px;
-font-weight:700;
-letter-spacing:-0.3px;
-line-height:25px;
-margin-bottom:15px;
-}
-
-h2 a{
-	color:#333333;
-	text-decoration:none;
-}	
-
-p {
-	font-size:12px;
-	line-height:20px;
+	font-size:18px;
+	margin-bottom:5px;
+	color:#003867;
+	font-size:18px;
+	font-weight:bold;
 }
 .line {
-	background:url("/images/line.jpg") no-repeat scroll center top #FFFFFF;
+	background:url("images/line.jpg") no-repeat scroll center top #FFFFFF;
 	float:left;
 	height:45px;
 	width:920px;
@@ -53,14 +42,14 @@ p {
 	top:9px;
 }
 .header .logos a.logo_rhomobile {
-	background:url("/images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
+	background:url("images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
 	width:56px;
 }
 .header .logos a.logo_rhohub {
-	background:url("/images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
+	background:url("images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
@@ -77,11 +66,13 @@ p {
 #menu ul {
 	background-repeat:no-repeat;
 	color:#FFFFFF;
+	font-family:arial;
 	margin:27px 0 0;
 	padding:0;
 }
 #menu ul li {
 	display:inline;
+	font-size:12px;
 	padding:0;
 }
 #menu ul li.separator{
@@ -189,4 +180,51 @@ p {
 clear {
 	clear:both;
 	display:block;
+}
+div.post {
+	clear:both;
+	margin-bottom:30px;
+	position:relative;
+}
+div.post .post_content {
+	padding-left:95px;
+}
+div.post .date {
+	background:url("images/post_date.jpg") no-repeat scroll 0 0 transparent;
+	height:127px;
+	padding-top:23px;
+	position:absolute;
+	text-align:center;
+	top:-17px;
+	width:63px;
+}
+div.post .date .month {
+}
+div.post .date span {
+	color:#FFFFFF;
+	display:block;
+	font-size:10px;
+	font-weight:700;
+	text-shadow:0 1px 0 #4A4A4A;
+}
+div.post .date .day {
+	font-size:21px;
+	margin-bottom:2px;
+}
+div.post .post_content a {
+	color:#333333;
+}
+div.post h2 a {
+	color:#333333;
+	text-decoration:none;
+}
+div.layout_rs .container.left p {
+	margin-bottom:30px;
+}
+div.post p {
+}
+p {
+	color:#333333;
+	line-height:20px;
+	margin-bottom:15px;
 }
