@@ -6,9 +6,9 @@ title: RhoHub
 {% for post in site.posts limit:5 %}
 <div class="post">
 	<div class="date">
-		<span class="month">>{{ post.date | date_to_string }}</span>
-		<span class="day">28</span>
-		<span>2010</span>
+		<span class="month">{{ post.date | month }}</span>
+		<span class="day">{{ post.date | day }}</span>
+		<span>{{ post.date | year }}</span>
 	</div><!-- END date -->
 
 	<div class="post_content">
