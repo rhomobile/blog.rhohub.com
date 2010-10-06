@@ -9,7 +9,7 @@ body {
 	font-family:Tahoma,Helvetica,sans-serif;
 	font-size:14px;
 }
-h2 {
+h2, h1 {
 	font-size:18px;
 	margin-bottom:5px;
 	color:#003867;
@@ -214,7 +214,7 @@ div.post .date .day {
 div.post .post_content a {
 	color:#333333;
 }
-div.post h2 a {
+div.post h2 a, div.post h1 a{
 	color:#333333;
 	text-decoration:none;
 }
