@@ -6,9 +6,9 @@ title: RhoHub adds iPhone/iPad build capability
 <div class="post">
 	<div class="date">
 		
-%(month) {{ page.date | date: '%B' }}%
-%(day) {{ page.date | date: '%d' }}%
-% {{ page.date | date: '%Y' }}%
+%(month){{ page.date | date: '%B' }}%
+%(day){{ page.date | date: '%d' }}%
+%{{ page.date | date: '%Y' }}%
 	
 	</div><!-- END date -->
 
