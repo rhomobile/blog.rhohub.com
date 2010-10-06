@@ -16,6 +16,11 @@ h2, h1 {
 	font-size:18px;
 	font-weight:bold;
 }
+
+h1 a{
+	color:#333333;
+	text-decoration:none;
+}
 .line {
 	background:url("../images/line.jpg") no-repeat scroll center top #FFFFFF;
 	float:left;
