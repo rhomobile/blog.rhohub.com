@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-06T12:16:46-05:00</updated>
+ <updated>2010-10-06T12:18:10-05:00</updated>
  <id></id>
 
  
@@ -15,28 +15,12 @@
    <link href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html"/>
    <updated>2010-09-30T00:00:00-05:00</updated>
    <id>/2010/09/30/rhohub-adds-iphone-ipad-build-capability</id>
-   <content type="html">&lt;div class=&quot;post&quot;&gt;
-&lt;div class=&quot;date&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;month&quot;&gt;September&lt;/span&gt;&lt;br /&gt;
-		&lt;span class=&quot;day&quot;&gt;30&lt;/span&gt;&lt;br /&gt;
-		&lt;span&gt;2010&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/div&gt;&lt;!-- END date --&gt;&lt;/p&gt;
-&lt;div class=&quot;post_content&quot;&gt;
-		&lt;h2&gt;&lt;a href=&quot;&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/h2&gt;
+   <content type="html">		&lt;h2&gt;&lt;a href=&quot;&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/h2&gt;
 		&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;post&quot;&gt;
-&lt;div class=&quot;date&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;month&quot;&gt;{{ page.date | date: &amp;#8216;%B&amp;#8217; }}&lt;/span&gt;&lt;br /&gt;
-		&lt;span class=&quot;day&quot;&gt;{{ page.date | date: &amp;#8216;%d&amp;#8217; }}&lt;/span&gt;&lt;br /&gt;
-		&lt;span&gt;{{ page.date | date: &amp;#8216;%Y&amp;#8217;}}&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/div&gt;&lt;!-- END date --&gt;&lt;/p&gt;
-&lt;div class=&quot;post_content&quot;&gt;
-		&lt;h2&gt;&lt;a href=&quot;{{ post.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;&lt;/h2&gt;
+				&lt;h2&gt;&lt;a href=&quot;{{ post.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;&lt;/h2&gt;
 		&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
 &lt;p&gt;{{ page.content }}&lt;/p&gt;
-&lt;p&gt;&lt;/div&gt;&lt;!--END post_content --&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;/div&gt;&lt;!--END post_content --&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
  </entry>
  
