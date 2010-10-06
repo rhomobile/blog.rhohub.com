@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-06T13:01:25-05:00</updated>
+ <updated>2010-10-06T14:42:22-05:00</updated>
  <id></id>
 
  
@@ -20,6 +20,16 @@
 &lt;p&gt;Today we are proud to announce the ability to perform iOS builds on RhoHub, our hosted service for smartphone app development. Yes, this means that you can now build iPhone and iPad apps right from your Windows or Linux-based computer (and Macs of course). We provide instructions on how to generate certificates and provisioning profiles using OpenSSL instead of XCode. With those in hand you can then build for iPhone with any Rhodes app for which you have posted the source code to RhoHub.&lt;/p&gt;
 &lt;p&gt;We have over ten thousand developers writing apps on RhoHub and many more tens of thousands of downloads. One of the most frequent questions from our customers was “I love writing native smartphone apps with Rhodes on my Windows machine, but how do I build for iPhone”. Of course since Rhodes generates native apps and builds with XCode this (building on Windows) isn’t actually possible with a local copy of Rhodes. But it &lt;span class=&quot;caps&quot;&gt;CAN&lt;/span&gt; be done with our hosted service RhoHub. Now RhoHub has Mac servers to enable hosted builds. Note that you will then need to test from a device instead of the emulator. But we see that scenario happen often anyway (especially on Android where the emulator is far slower both for install and execution than a real device). But we will also be adding hosted emulators in the future.&lt;/p&gt;
 &lt;p&gt;We encourage you to sign up for RhoHub and give it a try. Take a look at the RhoHub 2.0 tutorial and the RhoHub 2.0 training webinar. On Friday we’ll be holding another live training webinar on building iPhone apps on RhoHub (and submitting them to the App Store) that you can sign up for for free.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>RhoHub adds iPhone/iPad build capability</title>
+   <link href="/2010/09/28/BlackBerry-validates-the-%E2%80%9Cwrite-native-apps-with-web-skills%E2%80%9D-category-that-Rhodes-created.html"/>
+   <updated>2010-09-28T00:00:00-05:00</updated>
+   <id>/2010/09/28/BlackBerry-validates-the-“write-native-apps-with-web-skills”-category-that-Rhodes-created</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/09/28/BlackBerry-validates-the-%E2%80%9Cwrite-native-apps-with-web-skills%E2%80%9D-category-that-Rhodes-created.html&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;We were excited to read about the BlackBerry WebWorks Application Platform which was released yesterday. It is yet more validation of the “use your web skills to write native smartphone apps” approach that Rhomobile invented two years ago.&lt;/p&gt;
+&lt;p&gt;For developers that want to target all smartphones (not just BlackBerry), or provide synchronized offline data, or get the power of the Model View Controller pattern (WebWorks and other frameworks do not allow separation of controllers and views) we believe that the existence of such simpler frameworks provides a great steppingstone to Rhodes.&lt;/p&gt;</content>
  </entry>
  
 </feed>
