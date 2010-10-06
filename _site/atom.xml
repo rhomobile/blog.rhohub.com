@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-06T12:18:10-05:00</updated>
+ <updated>2010-10-06T12:19:18-05:00</updated>
  <id></id>
 
  
@@ -15,13 +15,11 @@
    <link href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html"/>
    <updated>2010-09-30T00:00:00-05:00</updated>
    <id>/2010/09/30/rhohub-adds-iphone-ipad-build-capability</id>
-   <content type="html">		&lt;h2&gt;&lt;a href=&quot;&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/h2&gt;
-		&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-				&lt;h2&gt;&lt;a href=&quot;{{ post.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;&lt;/h2&gt;
-		&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-&lt;p&gt;{{ page.content }}&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
+   <content type="html">&lt;h1&gt;RhoHub adds iPhone/iPad build capability&lt;/h1&gt;
+&lt;p&gt;Hello Smartphone Developers,&lt;/p&gt;
+&lt;p&gt;Today we are proud to announce the ability to perform iOS builds on RhoHub, our hosted service for smartphone app development. Yes, this means that you can now build iPhone and iPad apps right from your Windows or Linux-based computer (and Macs of course). We provide instructions on how to generate certificates and provisioning profiles using OpenSSL instead of XCode. With those in hand you can then build for iPhone with any Rhodes app for which you have posted the source code to RhoHub.&lt;/p&gt;
+&lt;p&gt;We have over ten thousand developers writing apps on RhoHub and many more tens of thousands of downloads. One of the most frequent questions from our customers was “I love writing native smartphone apps with Rhodes on my Windows machine, but how do I build for iPhone”. Of course since Rhodes generates native apps and builds with XCode this (building on Windows) isn’t actually possible with a local copy of Rhodes. But it &lt;span class=&quot;caps&quot;&gt;CAN&lt;/span&gt; be done with our hosted service RhoHub. Now RhoHub has Mac servers to enable hosted builds. Note that you will then need to test from a device instead of the emulator. But we see that scenario happen often anyway (especially on Android where the emulator is far slower both for install and execution than a real device). But we will also be adding hosted emulators in the future.&lt;/p&gt;
+&lt;p&gt;We encourage you to sign up for RhoHub and give it a try. Take a look at the RhoHub 2.0 tutorial and the RhoHub 2.0 training webinar. On Friday we’ll be holding another live training webinar on building iPhone apps on RhoHub (and submitting them to the App Store) that you can sign up for for free.&lt;/p&gt;</content>
  </entry>
  
 </feed>
