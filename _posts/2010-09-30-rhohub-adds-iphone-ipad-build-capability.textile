@@ -3,7 +3,7 @@ layout: post
 title: RhoHub adds iPhone/iPad build capability
 ---
 
-h2. "(myclass){{ page.title }}":{{ post.url }}
+h2. "{{ page.title }}":{{ page.url }}
 
 Hello Smartphone Developers,
 
