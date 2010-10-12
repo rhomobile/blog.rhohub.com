@@ -2,9 +2,19 @@
 title: Archive
 layout: default
 ---
-<dt>
+<h2 class="title">Archives</h2>
+<div class="line"></div>
+
+<div class="navigation" id="nav-above">
+	<div class="nav-previous"><a href="/index.html"><span class="meta-nav">←</span> Back to Blog</a></div>
+	<div class="nav-next"></div>
+</div>
+
+<ul id="archive">
 {% for post in site.posts %}
-<dd><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4> - {{ post.date | date_to_string }}</dd>
+<li>
+	<span>{{ post.date | date_to_string }}</span><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4> 
+</li>
 {% endfor %}
-</dt>
+</ul>
 <br/>

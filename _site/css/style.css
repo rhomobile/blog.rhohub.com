@@ -6,14 +6,20 @@ html, body {
 body {
 	background:url("../images/dash_header.png") repeat-x scroll 0 0 transparent;
 	color:#000000;
-	font-family:Tahoma,Helvetica,sans-serif;
 	font-size:14px;
+	font:12px Arial,Helvetica,sans-serif;
 }
 h2{
 color:#000;
 font-size:15px;
 font-weight:bold;
 margin-bottom:20px;
+}
+h2.title{
+	color:#003867;
+font-size:18px;
+font-weight:bold;
+margin-bottom:5px;
 }
 h1 {
 color:#003867;
@@ -25,7 +31,7 @@ margin-bottom:20px;
 h1 a{
 	color:#333333;
 	text-decoration:none;
-	font-size:20px;
+	font-size:18px;
 }
 .line {
 	background:url("../images/line.jpg") no-repeat scroll center top #FFFFFF;
@@ -104,6 +110,11 @@ h1 a{
 	padding-right:12px;
 	text-align:center;
 	text-shadow:1px 1px 0 #000000;
+}
+#menu ul li a img.rss_feed{
+margin-right:5px;
+position:relative;
+top:3px;	
 }
 #menu ul li a.current {
 	color:#FFFFFF;
@@ -244,4 +255,35 @@ p {
 	color:#333333;
 	line-height:20px;
 	margin-bottom:15px;
+}
+#archive{
+	
+}
+#archive li{
+margin-bottom:10px;
+}
+#archive li span{
+color:#A3A3A3;
+display:inline-block;
+float:left;
+font-size:10px;
+margin-top:2px;
+}
+#archive li h4{
+display:inline;
+margin-left:10px;
+}
+#archive li h4 a{
+	color:#333333;
+font-weight:bold;
+}
+.nav-previous{
+margin-bottom:20px;
+}
+.nav-previous a{
+color:#666666;
+font-weight:700;
+}
+.nav-previous a:hover{
+text-decoration:none;
 }

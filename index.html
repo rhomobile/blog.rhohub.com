@@ -2,6 +2,13 @@
 layout: default
 title: RhoHub
 ---
+<h2 class="title">Blog</h2>
+<div class="line"></div>
+
+<div class="navigation" id="nav-above">
+	<div class="nav-previous"><a href="/archives.html"><span class="meta-nav">←</span> Older posts</a></div>
+	<div class="nav-next"></div>
+</div>
 
 {% for post in site.posts limit:5 %}
 
@@ -18,5 +25,3 @@ title: RhoHub
 </div>
 
 {% endfor %}
-
-<a href="/archives.html">&lt;&lt; Archives</a> | <a href="/atom.xml" title="RSS feed">RSS Feed</a> 
