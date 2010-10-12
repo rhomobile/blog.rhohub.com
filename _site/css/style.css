@@ -25,6 +25,7 @@ margin-bottom:20px;
 h1 a{
 	color:#333333;
 	text-decoration:none;
+	font-size:20px;
 }
 .line {
 	background:url("../images/line.jpg") no-repeat scroll center top #FFFFFF;
