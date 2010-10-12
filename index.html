@@ -13,7 +13,7 @@ title: RhoHub
 	</div><!-- END date -->
 
 	<div class="post_content">
-		{{ post.content }}
+		{{ post.content | strip_html | truncatewords: 200 }} <br />(<a href="http://blog.favrik.com{{ post.id }}/">Read more</a>)
 	</div><!--END post_content -->
 </div>
 
