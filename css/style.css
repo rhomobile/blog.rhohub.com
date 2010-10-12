@@ -227,6 +227,7 @@ div.post .post_content a {
 }
 div.post .post_content a.read_more {
 display:inline-block;
+font-size:12px;
 font-weight:bold;
 margin-top:10px;
 }
