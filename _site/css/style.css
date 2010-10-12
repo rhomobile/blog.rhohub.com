@@ -225,6 +225,11 @@ div.post .date .day {
 div.post .post_content a {
 	color:#333333;
 }
+div.post .post_content a.read_more {
+display:inline-block;
+font-weight:bold;
+margin-top:10px;
+}
 div.post h2 a, div.post h1 a{
 	color:#333333;
 	text-decoration:none;
