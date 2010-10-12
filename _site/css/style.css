@@ -287,3 +287,21 @@ font-weight:700;
 .nav-previous a:hover{
 text-decoration:none;
 }
+.container_left {
+margin-right:28px;
+width:580px;
+float:left;
+}
+.title_sep {
+border-bottom:1px dotted #C0C0C0;
+color:#333333;
+font-size:14px;
+font-weight:700;
+margin-bottom:10px;
+padding-bottom:5px;
+}
+.container_last{
+	float:right;
+margin-top:38px;
+width:300px;
+}
