@@ -6,41 +6,63 @@
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
 	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-	
+
 	<script>
+	function Set_Cookie( name, value, expires, path, domain, secure )
+	{
+		var today = new Date();
+		today.setTime( today.getTime() );
+
+		if ( expires )
+		{
+			expires = expires * 1000 * 60 * 60 * 24;
+		}
+		var expires_date = new Date( today.getTime() + (expires) );
+
+		document.cookie = name + "=" +escape( value ) +
+		( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+		( ( path ) ? ";path=" + path : "" ) +
+		( ( domain ) ? ";domain=" + domain : "" ) +
+		( ( secure ) ? ";secure" : "" );
+	}
+
 	function Get_Cookie( check_name ) {
 
-	var a_all_cookies = document.cookie.split( ';' );
-	var a_temp_cookie = '';
-	var cookie_name = '';
-	var cookie_value = '';
-	var b_cookie_found = false; // set boolean t/f default f
+		var a_all_cookies = document.cookie.split( ';' );
+		var a_temp_cookie = '';
+		var cookie_name = '';
+		var cookie_value = '';
+		var b_cookie_found = false;
 
-	for ( i = 0; i < a_all_cookies.length; i++ )
-	{
-		a_temp_cookie = a_all_cookies[i].split( '=' );
-		cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
-
-		if ( cookie_name == check_name )
+		for ( i = 0; i < a_all_cookies.length; i++ )
 		{
-			b_cookie_found = true;
-			if ( a_temp_cookie.length > 1 )
+			a_temp_cookie = a_all_cookies[i].split( '=' );
+			cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+
+			if ( cookie_name == check_name )
 			{
-				cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+				b_cookie_found = true;
+				if ( a_temp_cookie.length > 1 )
+				{
+					cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+				}
+				return cookie_value;
+				break;
 			}
-			return cookie_value;
-			break;
+			a_temp_cookie = null;
+			cookie_name = '';
 		}
-		a_temp_cookie = null;
-		cookie_name = '';
+		if ( !b_cookie_found )
+		{
+			return null;
+		}
 	}
-	if ( !b_cookie_found )
-	{
-		return null;
+	function logout(){
+		Set_Cookie( 'rho_user', '0', '', '/', '', '' );
+		window.location = "https://app.rhohub.com/logout";
 	}
-}
 	</script>
-	
+
 </head>
 <body>
 
@@ -66,10 +88,10 @@
 						{	
 							document.write("<li><a class='logout' href='https://app.rhohub.com/"+Get_Cookie( 'rho_user' )+"'>My Account</a></li>")
 							document.write("<li class='separator'><img src='/images/tabs_separator.png'></li>")
-							document.write("<li><a class='logout' href='https://app.rhohub.com/logout'>Logout</a></li>")
+							document.write("<li><a class='logout' onclick='logout()' href='javascript:void(0)'>Logout</a></li>")
 						}
 						if ( Get_Cookie('rho_user') == null || Get_Cookie('rho_user') == 0) 
-							document.write("<li><a class='logout' href='http://app.rhohub.com/login'>Login</a></li>")
+						document.write("<li><a class='logout' href='http://app.rhohub.com/login'>Login</a></li>")
 						</script>
 						<li><a href="/atom.xml" title="RSS feed"><img class="rss_feed" src="/images/feed.png" />Subscribe</a></li>
 
