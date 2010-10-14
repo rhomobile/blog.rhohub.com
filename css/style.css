@@ -322,3 +322,14 @@ font-size:15px;
 font-weight:bold;
 text-align:left;
 }
+#dsq-content .dsq-request-user-stats {
+color:#A3A3A3;
+font-size:12px;
+padding:0 0 0 0.5em;
+}
+#dsq-content .dsq-pagination {
+text-align:left;
+}
+#dsq-new-post{
+	padding-top:10px;
+}
