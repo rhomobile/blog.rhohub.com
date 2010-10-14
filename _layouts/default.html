@@ -25,7 +25,7 @@
 		( ( domain ) ? ";domain=" + domain : "" ) +
 		( ( secure ) ? ";secure" : "" );
 	}
-
+	
 	function Get_Cookie( check_name ) {
 
 		var a_all_cookies = document.cookie.split( ';' );
@@ -58,7 +58,7 @@
 		}
 	}
 	function logout(){
-		Set_Cookie( 'rho_user', '0', '', '/', '', '' );
+		Set_Cookie( 'rho_user', '0', '', '/', '.rhohub.com', '' );
 		window.location = "https://app.rhohub.com/logout";
 	}
 	</script>
