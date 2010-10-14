@@ -328,8 +328,14 @@ font-size:12px;
 padding:0 0 0 0.5em;
 }
 #dsq-content .dsq-pagination {
-text-align:left;
+margin:0 !important;
+padding:0 !important;
+text-align:left !important;
 }
 #dsq-new-post{
 	padding-top:10px;
+}
+#dsq-new-post h3{
+font-size:14px;
+font-weight:bold;
 }
