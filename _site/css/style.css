@@ -305,3 +305,20 @@ padding-bottom:5px;
 margin-top:38px;
 width:300px;
 }
+#disqus_thread {
+margin-bottom:10px;
+padding-top:20px;
+}
+#dsq-content .dsq-request-user-logout {
+float:right;
+font-weight:bold;
+}
+#dsq-content h3 {
+display:block;
+margin-bottom:10px;
+}
+#dsq-content .dsq-pagination {
+font-size:15px;
+font-weight:bold;
+text-align:left;
+}
