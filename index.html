@@ -1,8 +1,8 @@
 ---
 layout: default
-title: RhoHub
+title: RhoHub Blog
 ---
-<h2 class="title">Blog</h2>
+<h2 class="title">RhoHub Blog</h2>
 <div class="line"></div>
 
 <div class="container_left">
@@ -18,7 +18,7 @@ title: RhoHub
 		</div><!-- END date -->
 
 		<div class="post_content">
-			{{ post.content | truncatewords: 100 }} <br/> (<a class="read_more" href="http://blog.rhohub.com{{ post.id }}.html">Read more</a>)
+			{{ post.content | truncatewords: 100 }} <br/> (<a class="read_more" href="{{ post.url }}">Read more</a>)
 		</div><!--END post_content -->
 	</div>
 
