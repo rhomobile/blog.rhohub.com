@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{{ page.title }}</title>
+	<title>New Blog</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
@@ -101,7 +101,39 @@
 
 
 			<div id="yield_container">
-				{{ content }} 
+					<div class="navigation" id="nav-above">
+		<div class="nav-previous"><a href="/index.html"><span class="meta-nav">←</span> Back to Posts</a></div>
+		<div class="nav-next"></div>
+	</div>
+
+<div class="post">
+	<div class="date">
+		<span class="month">October</span>
+		<span class="day">15</span>
+		<span>2010</span>
+	</div><!-- END date -->
+
+	<div class="post_content">
+	   <h1><a href="/2010/10/15/new-blog-site.html">New Blog</a></h1>
+
+<p>Welcome to the new RhoHub blog!  We'll use this area for new RhoHub features and maintenance details (in addition to our realtime status on <a href="http://twitter.com/rhohub">twitter</a>). Let us know what you think!  We're using <a href="http://github.com/mojombo/jekyll">jekyll</a>, and you can find the source for this blog on <a href="http://github.com/rhomobile/blog.rhohub.com">the github project</a>.</p>
+
+<p>We hope you like it!</p>
+
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://rhohubblog.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rhohubblog">comments powered by Disqus.</a></noscript>
+	</div><!--END post_content -->
+</div> 
 			</div>
 
 		</div><!--END wrapper -->
