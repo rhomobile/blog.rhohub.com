@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-14T18:28:37-07:00</updated>
+ <updated>2010-10-14T18:30:03-07:00</updated>
  <id></id>
 
  
@@ -30,7 +30,7 @@
    <id>/2010/10/14/new-blog-site</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/14/new-blog-site.html&quot;&gt;New Blog!&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;&lt;img src=&quot;http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Welcome to the new RhoHub blog!  We'll use this area for new RhoHub features and maintenance details (in addition to our realtime status on &lt;a href=&quot;http://twitter.com/rhohub&quot;&gt;twitter&lt;/a&gt;). Let us know what you think!  We're using &lt;a href=&quot;http://github.com/mojombo/jekyll&quot;&gt;jekyll&lt;/a&gt;, and you can find the source for this blog on &lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;the github project&lt;/a&gt;.&lt;/p&gt;
 
