@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-10-14T18:30:03-07:00</updated>
+ <updated>2010-10-21T13:33:43-07:00</updated>
  <id></id>
 
  
@@ -12,10 +12,10 @@
  
  <entry>
    <title>RhoHub now supports IE 8+</title>
-   <link href="/2010/10/15/rhohub-ie-support.html"/>
-   <updated>2010-10-15T00:00:00-07:00</updated>
-   <id>/2010/10/15/rhohub-ie-support</id>
-   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/15/rhohub-ie-support.html&quot;&gt;RhoHub now supports IE 8+&lt;/a&gt;&lt;/h1&gt;
+   <link href="/2010/10/21/rhohub-ie-support.html"/>
+   <updated>2010-10-21T00:00:00-07:00</updated>
+   <id>/2010/10/21/rhohub-ie-support</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/21/rhohub-ie-support.html&quot;&gt;RhoHub now supports IE 8+&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;We just pushed up support for IE 8 and IE 9 beta, so if you're an IE user we encourage you to give it a try.  Now on Windows you can use RhoHub with any major browser (IE, Firefox, Chrome, Safari).  In addition to the recently added &lt;a href=&quot;http://blog.rhohub.com/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html&quot;&gt;iOS build support&lt;/a&gt;, we hope this makes your RhoHub Windows experience more comfortable.  As always please &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; if you like.&lt;/p&gt;
 
@@ -25,10 +25,10 @@
  
  <entry>
    <title>New Blog!</title>
-   <link href="/2010/10/14/new-blog-site.html"/>
-   <updated>2010-10-14T00:00:00-07:00</updated>
-   <id>/2010/10/14/new-blog-site</id>
-   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/14/new-blog-site.html&quot;&gt;New Blog!&lt;/a&gt;&lt;/h1&gt;
+   <link href="/2010/10/20/new-blog-site.html"/>
+   <updated>2010-10-20T00:00:00-07:00</updated>
+   <id>/2010/10/20/new-blog-site</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/20/new-blog-site.html&quot;&gt;New Blog!&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;&lt;img src=&quot;http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
 
