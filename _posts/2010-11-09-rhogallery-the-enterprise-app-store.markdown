@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RhoGallery – the Enterprise App Store
+title: RhoGallery – The Enterprise App Store
 
 ---
 
