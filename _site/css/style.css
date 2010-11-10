@@ -211,6 +211,13 @@ div.post {
 div.post .post_content {
 	padding-left:95px;
 }
+div.post .post_content ul{
+	margin:20px 0 20px 30px;
+}
+div.post .post_content ul li{
+	list-style:disc outside none;
+	margin-top:7px;
+}
 div.post .date {
 	background:url("../images/post_date.jpg") no-repeat scroll 0 0 transparent;
 	height:127px;
