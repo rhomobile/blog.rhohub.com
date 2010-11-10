@@ -21,7 +21,7 @@ RhoGallery provides:
 
 To get started, create a Gallery and upload or link to one or more apps. For each app upload one or more builds for various smartphones. These can be from:
 
-- local files that you have available (.apk files for Android, .cod files for BlackBerry, .cab files for Windows Mobile)
+- local files that you have available (.apk files for Android, .cod/.jad files for BlackBerry, .cab files for Windows Mobile, .ipa/.plist files for iOS)
 - from RhoHub builds that you have made
 - from some external remote URL (note that they do not have to have been built with Rhodes or even built by your own enterprise).
 

@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-11-10T17:55:26-05:00</updated>
+ <updated>2010-11-10T14:59:30-08:00</updated>
  <id></id>
 
  
@@ -13,7 +13,7 @@
  <entry>
    <title>RhoGallery – the Enterprise App Store</title>
    <link href="/2010/11/09/rhogallery-the-enterprise-app-store.html"/>
-   <updated>2010-11-09T00:00:00-05:00</updated>
+   <updated>2010-11-09T00:00:00-08:00</updated>
    <id>/2010/11/09/rhogallery-the-enterprise-app-store</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/11/09/rhogallery-the-enterprise-app-store.html&quot;&gt;RhoGallery – the Enterprise App Store&lt;/a&gt;&lt;/h1&gt;
 
@@ -35,7 +35,7 @@
 &lt;p&gt;To get started, create a Gallery and upload or link to one or more apps. For each app upload one or more builds for various smartphones. These can be from:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;local files that you have available (.apk files for Android, .cod files for BlackBerry, .cab files for Windows Mobile)&lt;/li&gt;
+&lt;li&gt;local files that you have available (.apk files for Android, .cod/.jad files for BlackBerry, .cab files for Windows Mobile, .ipa/.plist files for iOS)&lt;/li&gt;
 &lt;li&gt;from RhoHub builds that you have made&lt;/li&gt;
 &lt;li&gt;from some external remote URL (note that they do not have to have been built with Rhodes or even built by your own enterprise).&lt;/li&gt;
 &lt;/ul&gt;
@@ -52,7 +52,7 @@
  <entry>
    <title>RhoHub now supports IE 8+</title>
    <link href="/2010/10/21/rhohub-ie-support.html"/>
-   <updated>2010-10-21T00:00:00-05:00</updated>
+   <updated>2010-10-21T00:00:00-07:00</updated>
    <id>/2010/10/21/rhohub-ie-support</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/21/rhohub-ie-support.html&quot;&gt;RhoHub now supports IE 8+&lt;/a&gt;&lt;/h1&gt;
 
@@ -65,7 +65,7 @@
  <entry>
    <title>New Blog!</title>
    <link href="/2010/10/20/new-blog-site.html"/>
-   <updated>2010-10-20T00:00:00-05:00</updated>
+   <updated>2010-10-20T00:00:00-07:00</updated>
    <id>/2010/10/20/new-blog-site</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/20/new-blog-site.html&quot;&gt;New Blog!&lt;/a&gt;&lt;/h1&gt;
 
@@ -80,7 +80,7 @@
  <entry>
    <title>RhoHub adds iPhone/iPad build capability</title>
    <link href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html"/>
-   <updated>2010-09-30T00:00:00-05:00</updated>
+   <updated>2010-09-30T00:00:00-07:00</updated>
    <id>/2010/09/30/rhohub-adds-iphone-ipad-build-capability</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html&quot;&gt;RhoHub adds iPhone/iPad build capability&lt;/a&gt;&lt;/h1&gt;
 
