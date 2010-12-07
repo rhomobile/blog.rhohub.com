@@ -4,11 +4,27 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-11-10T15:01:08-08:00</updated>
+ <updated>2010-12-07T14:00:40-08:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>RhoGallery Updates and Video</title>
+   <link href="/2010/12/07/rhogallery-updates-and-video.html"/>
+   <updated>2010-12-07T00:00:00-08:00</updated>
+   <id>/2010/12/07/rhogallery-updates-and-video</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/12/07/rhogallery-updates-and-video.html&quot;&gt;RhoGallery Updates and Video&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;We just pushed up some enhancements and several bugfixes to the RhoGallery.  Please feel free to &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; with your thoughts and suggestions on RhoGallery.  We'd love to hear it!&lt;/p&gt;
+
+&lt;p&gt;Also, in case you missed the webinar on Friday, here's Brian's webinar demonstrating RhoGallery management:&lt;/p&gt;
+
+&lt;iframe src=&quot;http://player.vimeo.com/video/17457250?byline=0&amp;amp;portrait=0&amp;amp;color=de0909&quot; width=&quot;450&quot; height=&quot;253&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>RhoGallery – The Enterprise App Store</title>
