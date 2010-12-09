@@ -4,11 +4,24 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2010-12-07T14:00:40-08:00</updated>
+ <updated>2010-12-09T12:28:17-08:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>Mac Build Cloud Now Supports iOS SDK 4.2</title>
+   <link href="/2010/12/09/ios-build-cloud-supports-42.html"/>
+   <updated>2010-12-09T00:00:00-08:00</updated>
+   <id>/2010/12/09/ios-build-cloud-supports-42</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/12/09/ios-build-cloud-supports-42.html&quot;&gt;Mac Build Cloud Now Supports iOS SDK 4.2&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;We just updated the mac build cloud with support for &lt;a href=&quot;http://www.apple.com/ios/&quot;&gt;iOS SDK 4.2&lt;/a&gt; so you can now submit your applications to the App Store using the latest SDK.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>RhoGallery Updates and Video</title>
