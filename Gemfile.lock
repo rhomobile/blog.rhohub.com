@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/rhomobile/rhomobile-nav.git
+  revision: 1adcadf2fd7463704a873745388ba6606c027513
+  specs:
+    rhomobile-nav (0.0.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -26,3 +32,4 @@ DEPENDENCIES
   jekyll
   liquid (= 2.1.3)
   rack-jekyll
+  rhomobile-nav (= 0.0.2)!
