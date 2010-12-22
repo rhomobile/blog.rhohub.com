@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RhoHub</title>
+	<title>RhoHub Blog</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
 	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script>
+	function Set_Cookie( name, value, expires, path, domain, secure )
+	{
+		var today = new Date();
+		today.setTime( today.getTime() );
+
+		if ( expires )
+		{
+			expires = expires * 1000 * 60 * 60 * 24;
+		}
+		var expires_date = new Date( today.getTime() + (expires) );
+
+		document.cookie = name + "=" +escape( value ) +
+		( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+		( ( path ) ? ";path=" + path : "" ) +
+		( ( domain ) ? ";domain=" + domain : "" ) +
+		( ( secure ) ? ";secure" : "" );
+	}
+	
+	function Get_Cookie( check_name ) {
+
+		var a_all_cookies = document.cookie.split( ';' );
+		var a_temp_cookie = '';
+		var cookie_name = '';
+		var cookie_value = '';
+		var b_cookie_found = false;
+
+		for ( i = 0; i < a_all_cookies.length; i++ )
+		{
+			a_temp_cookie = a_all_cookies[i].split( '=' );
+			cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+
+			if ( cookie_name == check_name )
+			{
+				b_cookie_found = true;
+				if ( a_temp_cookie.length > 1 )
+				{
+					cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+				}
+				return cookie_value;
+				break;
+			}
+			a_temp_cookie = null;
+			cookie_name = '';
+		}
+		if ( !b_cookie_found )
+		{
+			return null;
+		}
+	}
+	function logout(){
+		Set_Cookie( 'rho_user', '0', '', '/', '.rhohub.com', '' );
+		window.location = "https://app.rhohub.com/logout";
+	}
+	</script>
+
 </head>
 <body>
 
@@ -13,7 +70,7 @@
 		<div id="wrapper">
 			<div class="header">
 				<div class="logos">
-					<a href="http://rhomobile.com" class="logo_rhomobile">RhoMobile</a>
+					<a href="http://rhomobile.com" class="logo_rhomobile">Rhomobile</a>
 					<a href="http://app.rhohub.com" class="logo_rhohub">RhoHub</a>
 				</div>
 
@@ -23,33 +80,162 @@
 						<li ><a href="http://app.rhohub.com/overview" class="">How to Use</a></li>
 						<li ><a href="http://app.rhohub.com/pricing" class="">Pricing</a></li>
 						<li><a target="_blank" href="http://wiki.rhomobile.com/index.php/RhoHub">Docs</a></li>
+						<li><a href="mailto:support@rhohub.com?subject=[RhoHub]" title="Submit a request">Support</a></li>
 						<li class="separator">
 							<img src="/images/tabs_separator.png">
 						</li>
-						<li><a class="logout" href="http://app.rhohub.com/login">Login</a></li>
+						<script>
+						if ( Get_Cookie('rho_user') != null && Get_Cookie('rho_user') != 0) 
+						{	
+							document.write("<li><a class='logout' href='https://app.rhohub.com/"+Get_Cookie( 'rho_user' )+"'>My Account</a></li>")
+							document.write("<li class='separator'><img src='/images/tabs_separator.png'></li>")
+							document.write("<li><a class='logout' onclick='logout()' href='javascript:void(0)'>Logout</a></li>")
+						}
+						if ( Get_Cookie('rho_user') == null || Get_Cookie('rho_user') == 0) 
+						document.write("<li><a class='logout' href='http://app.rhohub.com/login'>Login</a></li>")
+						</script>
+						<li><a href="/atom.xml" title="RSS feed"><img class="rss_feed" src="/images/feed.png" />Subscribe</a></li>
+
 					</ul>
 				</div>
 			</div>
 
 
 			<div id="yield_container">
-				<div id="home">
-  <ul class="posts">
+				<h2 class="title">RhoHub Blog</h2>
+<div class="line"></div>
+
+<div class="container_left">
+
+
 	
-	<li>
-		<div class="post">
-			<h2><a href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html">RhoHub adds iPhone/iPad build capability</a></h2>
-			<div id="date">published 30 Sep 2010</div>
-			<h1>RhoHub adds iPhone/iPad build capability</h1>
-<p>Hello Smartphone Developers,</p>
-<p>Today we are proud to announce the ability to perform iOS builds on RhoHub, our hosted service for smartphone app development. Yes, this means that you can now build iPhone and iPad apps right from your Windows or Linux-based computer (and Macs of course). We provide instructions on how to generate certificates and provisioning profiles using OpenSSL instead of XCode. With those in hand you can then build for iPhone with any Rhodes app for which you have posted the source code to RhoHub.</p>
-<p>We have over ten thousand developers writing apps on RhoHub and many more tens of thousands of downloads. One of the most frequent questions from our customers was “I love writing native smartphone apps with Rhodes on my Windows machine, but how do I build for iPhone”. Of course since Rhodes generates native apps and builds with XCode this (building on Windows) isn’t actually possible with a local copy of Rhodes. But it <span class="caps">CAN</span> be done with our hosted service RhoHub. Now RhoHub has Mac servers to enable hosted builds. Note that you will then need to test from a device instead of the emulator. But we see that scenario happen often anyway (especially on Android where the emulator is far slower both for install and execution than a real device). But we will also be adding hosted emulators in the future.</p>
-<p>We encourage you to sign up for RhoHub and give it a try. Take a look at the RhoHub 2.0 tutorial and the RhoHub 2.0 training webinar. On Friday we’ll be holding another live training webinar on building iPhone apps on RhoHub (and submitting them to the App Store) that you can sign up for for free.</p>
-		</div>
-	</li>
+
+	<div class="post">
+		<div class="date">
+			<span class="month">December</span>
+			<span class="day">09</span>
+			<span>2010</span>
+		</div><!-- END date -->
+
+		<div class="post_content">
+			<h1><a href="/2010/12/09/ios-build-cloud-supports-42.html">Mac Build Cloud Now Supports iOS SDK 4.2</a></h1>
+
+<p>We just updated the mac build cloud with support for <a href="http://www.apple.com/ios/">iOS SDK 4.2</a> so you can now submit your applications to the App Store using the latest SDK.</p>
+
+<p>Cheers!</p>
+ <br/> (<a class="read_more" href="/2010/12/09/ios-build-cloud-supports-42.html">Read more</a>)
+		</div><!--END post_content -->
+	</div>
+
 	
-  </ul>
-  <a href="/archives.html">&lt;&lt; Archives</a> | <a href="/atom.xml" title="RSS feed">RSS Feed</a> 
+
+	<div class="post">
+		<div class="date">
+			<span class="month">December</span>
+			<span class="day">07</span>
+			<span>2010</span>
+		</div><!-- END date -->
+
+		<div class="post_content">
+			<h1><a href="/2010/12/07/rhogallery-updates-and-video.html">RhoGallery Updates and Video</a></h1>
+
+<p>We just pushed up some enhancements and several bugfixes to the RhoGallery.  Please feel free to <a href="mailto:support@rhohub.com">send us feedback</a> with your thoughts and suggestions on RhoGallery.  We'd love to hear it!</p>
+
+<p>Also, in case you missed the webinar on Friday, here's Brian's webinar demonstrating RhoGallery management:</p>
+
+<iframe src="http://player.vimeo.com/video/17457250?byline=0&amp;portrait=0&amp;color=de0909" width="450" height="253" frameborder="0"></iframe>
+
+ <br/> (<a class="read_more" href="/2010/12/07/rhogallery-updates-and-video.html">Read more</a>)
+		</div><!--END post_content -->
+	</div>
+
+	
+
+	<div class="post">
+		<div class="date">
+			<span class="month">November</span>
+			<span class="day">09</span>
+			<span>2010</span>
+		</div><!-- END date -->
+
+		<div class="post_content">
+			<h1><a href="/2010/11/09/rhogallery-the-enterprise-app-store.html">RhoGallery – The Enterprise App Store</a></h1> <p>The best product ideas always come from customers. As an open source company, we’ve always had the advantage of a community of tens of thousands of Rhodes developers to help provide feedback on product direction as well as contributions to the product. This community helped to spur creation of RhoHub, the first Development as a Service for mobile.</p> <p>Our RhoHub community also has been asking for some solution to how to install and manage the plethora of apps that RhoHub enables. We initially tried to refer this opportunity to existing players in this... <br/> (<a class="read_more" href="/2010/11/09/rhogallery-the-enterprise-app-store.html">Read more</a>)
+		</div><!--END post_content -->
+	</div>
+
+	
+
+	<div class="post">
+		<div class="date">
+			<span class="month">October</span>
+			<span class="day">21</span>
+			<span>2010</span>
+		</div><!-- END date -->
+
+		<div class="post_content">
+			<h1><a href="/2010/10/21/rhohub-ie-support.html">RhoHub now supports IE 8+</a></h1>
+
+<p>We just pushed up support for IE 8 and IE 9 beta, so if you're an IE user we encourage you to give it a try.  Now on Windows you can use RhoHub with any major browser (IE, Firefox, Chrome, Safari).  In addition to the recently added <a href="http://blog.rhohub.com/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html">iOS build support</a>, we hope this makes your RhoHub Windows experience more comfortable.  As always please <a href="mailto:support@rhohub.com">send us feedback</a> if you like.</p>
+
+<p><img src="http://img.skitch.com/20101015-xxdmxut7c9hpimn163t599c8y.png"/></p>
+ <br/> (<a class="read_more" href="/2010/10/21/rhohub-ie-support.html">Read more</a>)
+		</div><!--END post_content -->
+	</div>
+
+	
+
+	<div class="post">
+		<div class="date">
+			<span class="month">October</span>
+			<span class="day">20</span>
+			<span>2010</span>
+		</div><!-- END date -->
+
+		<div class="post_content">
+			<h1><a href="/2010/10/20/new-blog-site.html">New Blog!</a></h1>
+
+<p><a href="http://github.com/rhomobile/blog.rhohub.com"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/></a></p>
+
+<p>Welcome to the new RhoHub blog!  We'll use this area for new RhoHub features and maintenance details (in addition to our realtime status on <a href="http://twitter.com/rhohub">twitter</a>). Let us know what you think!  We're using <a href="http://github.com/mojombo/jekyll">jekyll</a>, and you can find the source for this blog on <a href="http://github.com/rhomobile/blog.rhohub.com">the github project</a>.</p>
+
+<p>We hope you like it!</p>
+ <br/> (<a class="read_more" href="/2010/10/20/new-blog-site.html">Read more</a>)
+		</div><!--END post_content -->
+	</div>
+
+	
+
+</div>
+
+<div class="container_last">
+	<h3 class="title_sep">Archive</h3>
+	<ul id="archive">
+		
+		<li>
+			<span>09 Dec 2010</span><h4><a href="/2010/12/09/ios-build-cloud-supports-42.html" title="Mac Build Cloud Now Supports iOS SDK 4.2">Mac Build Cloud Now...</a></h4> 
+		</li>
+		
+		<li>
+			<span>07 Dec 2010</span><h4><a href="/2010/12/07/rhogallery-updates-and-video.html" title="RhoGallery Updates and Video">RhoGallery Updates and Video...</a></h4> 
+		</li>
+		
+		<li>
+			<span>09 Nov 2010</span><h4><a href="/2010/11/09/rhogallery-the-enterprise-app-store.html" title="RhoGallery – The Enterprise App Store">RhoGallery – The Enterprise...</a></h4> 
+		</li>
+		
+		<li>
+			<span>21 Oct 2010</span><h4><a href="/2010/10/21/rhohub-ie-support.html" title="RhoHub now supports IE 8+">RhoHub now supports IE...</a></h4> 
+		</li>
+		
+		<li>
+			<span>20 Oct 2010</span><h4><a href="/2010/10/20/new-blog-site.html" title="New Blog!">New Blog!</a></h4> 
+		</li>
+		
+		<li>
+			<span>30 Sep 2010</span><h4><a href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html" title="RhoHub adds iPhone/iPad build capability">RhoHub adds iPhone/iPad build...</a></h4> 
+		</li>
+		
+	</ul>
 </div> 
 			</div>
 
@@ -91,6 +277,15 @@ try {
 	var pageTracker = _gat._getTracker("UA-5554280-3");
 	pageTracker._trackPageview();
 	} catch(err) {}
-	</script>
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'rhohubblog';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://disqus.com/forums/rhohubblog/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
 </body>
 </html>

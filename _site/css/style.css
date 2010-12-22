@@ -4,24 +4,37 @@ html, body {
 	padding:0;
 }
 body {
-	background:url("/images/dash_header.png") repeat-x scroll 0 0 transparent;
+	background:url("../images/dash_header.png") repeat-x scroll 0 0 transparent;
 	color:#000000;
-	font-family:Arial,sans-serif,Helvetica;
-	font-size:12px;
+	font-size:14px;
+	font:12px Arial,Helvetica,sans-serif;
 }
-h2 {
-	font-size:18px;
-	margin-bottom:5px;
+h2{
+color:#000;
+font-size:15px;
+font-weight:bold;
+margin-bottom:20px;
+}
+h2.title{
 	color:#003867;
-	font-size:18px;
-	font-weight:bold;
+font-size:18px;
+font-weight:bold;
+margin-bottom:5px;
 }
-p {
-	font-size:12px;
-	line-height:20px;
+h1 {
+color:#003867;
+font-size:18px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+h1 a{
+	color:#333333;
+	text-decoration:none;
+	font-size:18px;
 }
 .line {
-	background:url("/images/line.jpg") no-repeat scroll center top #FFFFFF;
+	background:url("../images/line.jpg") no-repeat scroll center top #FFFFFF;
 	float:left;
 	height:45px;
 	width:920px;
@@ -46,14 +59,14 @@ p {
 	top:9px;
 }
 .header .logos a.logo_rhomobile {
-	background:url("/images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
+	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
 	width:56px;
 }
 .header .logos a.logo_rhohub {
-	background:url("/images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
+	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
 	float:left;
 	height:38px;
 	text-indent:-3000px;
@@ -70,11 +83,13 @@ p {
 #menu ul {
 	background-repeat:no-repeat;
 	color:#FFFFFF;
+	font-family:arial;
 	margin:27px 0 0;
 	padding:0;
 }
 #menu ul li {
 	display:inline;
+	font-size:12px;
 	padding:0;
 }
 #menu ul li.separator{
@@ -95,6 +110,11 @@ p {
 	padding-right:12px;
 	text-align:center;
 	text-shadow:1px 1px 0 #000000;
+}
+#menu ul li a img.rss_feed{
+margin-right:5px;
+position:relative;
+top:3px;	
 }
 #menu ul li a.current {
 	color:#FFFFFF;
@@ -182,4 +202,147 @@ p {
 clear {
 	clear:both;
 	display:block;
+}
+div.post {
+	clear:both;
+	margin-bottom:30px;
+	position:relative;
+}
+div.post .post_content {
+	padding-left:95px;
+}
+div.post .post_content ul{
+	margin:20px 0 20px 30px;
+}
+div.post .post_content ul li{
+	list-style:disc outside none;
+	margin-top:7px;
+}
+div.post .date {
+	background:url("../images/post_date.jpg") no-repeat scroll 0 0 transparent;
+	height:127px;
+	padding-top:23px;
+	position:absolute;
+	text-align:center;
+	top:-17px;
+	width:63px;
+}
+div.post .date .month {
+}
+div.post .date span {
+	color:#FFFFFF;
+	display:block;
+	font-size:10px;
+	font-weight:700;
+	text-shadow:0 1px 0 #4A4A4A;
+}
+div.post .date .day {
+	font-size:21px;
+	margin-bottom:2px;
+}
+div.post .post_content a {
+	color:#333333;
+}
+div.post .post_content a.read_more {
+display:inline-block;
+font-size:12px;
+font-weight:bold;
+margin-top:10px;
+}
+div.post h2 a, div.post h1 a{
+	color:#333333;
+	text-decoration:none;
+}
+div.layout_rs .container.left p {
+	margin-bottom:30px;
+}
+div.post p {
+}
+p {
+	color:#333333;
+	line-height:20px;
+	margin-bottom:15px;
+}
+#archive{
+	
+}
+#archive li{
+margin-bottom:10px;
+}
+#archive li span{
+color:#A3A3A3;
+display:inline-block;
+float:left;
+font-size:10px;
+margin-top:2px;
+}
+#archive li h4{
+display:inline;
+margin-left:10px;
+}
+#archive li h4 a{
+	color:#333333;
+font-weight:bold;
+}
+.nav-previous{
+margin-bottom:20px;
+}
+.nav-previous a{
+color:#666666;
+font-weight:700;
+}
+.nav-previous a:hover{
+text-decoration:none;
+}
+.container_left {
+margin-right:28px;
+width:580px;
+float:left;
+}
+.title_sep {
+border-bottom:1px dotted #C0C0C0;
+color:#333333;
+font-size:14px;
+font-weight:700;
+margin-bottom:10px;
+padding-bottom:5px;
+}
+.container_last{
+	float:right;
+margin-top:38px;
+width:300px;
+}
+#disqus_thread {
+margin-bottom:10px;
+padding-top:20px;
+}
+#dsq-content .dsq-request-user-logout {
+float:right;
+font-weight:bold;
+}
+#dsq-content h3 {
+display:block;
+margin-bottom:10px;
+}
+#dsq-content .dsq-pagination {
+font-size:15px;
+font-weight:bold;
+text-align:left;
+}
+#dsq-content .dsq-request-user-stats {
+color:#A3A3A3;
+font-size:12px;
+padding:0 0 0 0.5em;
+}
+#dsq-content .dsq-pagination {
+margin:0 !important;
+padding:0 !important;
+text-align:left !important;
+}
+#dsq-new-post{
+	padding-top:10px;
+}
+#dsq-new-post h3{
+font-size:14px;
+font-weight:bold;
 }

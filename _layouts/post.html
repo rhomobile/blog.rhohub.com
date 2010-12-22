@@ -1,6 +1,31 @@
 ---
 layout: default
 ---
-<div id="post">
-{{ content }}
+	<div class="navigation" id="nav-above">
+		<div class="nav-previous"><a href="/index.html"><span class="meta-nav">←</span> Back to Posts</a></div>
+		<div class="nav-next"></div>
+	</div>
+
+<div class="post">
+	<div class="date">
+		<span class="month">{{ page.date | date: '%B' }}</span>
+		<span class="day">{{ page.date | date: '%d' }}</span>
+		<span>{{ page.date | date: '%Y'}}</span>
+	</div><!-- END date -->
+
+	<div class="post_content">
+	   {{ content }}
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://rhohubblog.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rhohubblog">comments powered by Disqus.</a></noscript>
+	</div><!--END post_content -->
 </div>

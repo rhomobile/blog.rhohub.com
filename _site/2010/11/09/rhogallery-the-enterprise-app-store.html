@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RhoHub adds iPhone/iPad build capability</title>
+	<title>RhoGallery – The Enterprise App Store</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
@@ -109,21 +109,43 @@
 
 <div class="post">
 	<div class="date">
-		<span class="month">September</span>
-		<span class="day">30</span>
+		<span class="month">November</span>
+		<span class="day">09</span>
 		<span>2010</span>
 	</div><!-- END date -->
 
 	<div class="post_content">
-	   <h1><a href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html">RhoHub adds iPhone/iPad build capability</a></h1>
+	   <h1><a href="/2010/11/09/rhogallery-the-enterprise-app-store.html">RhoGallery – The Enterprise App Store</a></h1>
 
-<p>Hello Smartphone Developers,</p>
+<p>The best product ideas always come from customers. As an open source company, we’ve always had the advantage of a community of tens of thousands of Rhodes developers to help provide feedback on product direction as well as contributions to the product. This community helped to spur creation of RhoHub, the first Development as a Service for mobile.</p>
 
-<p>Today we are proud to announce the ability to perform iOS builds on RhoHub, our hosted service for smartphone app development. Yes, this means that you can now build iPhone and iPad apps right from your Windows or Linux-based computer (and Macs of course). We provide instructions on how to generate certificates and provisioning profiles using OpenSSL instead of XCode. With those in hand you can then build for iPhone with any Rhodes app for which you have posted the source code to RhoHub.</p>
+<p>Our RhoHub community also has been asking for some solution to how to install and manage the plethora of apps that RhoHub enables. We initially tried to refer this opportunity to existing players in this space (“mobile app management” has been around for a while). But the feedback that we got was that those existing mobile app management products were far too expensive, difficult to deploy and difficult to use. “Give us the lightweight model and inexpensive monthly billing that you have for RhoHub” we heard you say.</p>
 
-<p>We have over ten thousand developers writing apps on RhoHub and many more tens of thousands of downloads. One of the most frequent questions from our customers was “I love writing native smartphone apps with Rhodes on my Windows machine, but how do I build for iPhone”. Of course since Rhodes generates native apps and builds with XCode this (building on Windows) isn’t actually possible with a local copy of Rhodes. But it CAN be done with our hosted service RhoHub. Now RhoHub has Mac servers to enable hosted builds. Note that you will then need to test from a device instead of the emulator. But we see that scenario happen often anyway (especially on Android where the emulator is far slower both for install and execution than a real device). But we will also be adding hosted emulators in the future.</p>
+<p>So we’ve spent the last several months hard at work on building a new product in this space: the first hosted SaaS mobile app management solution. Yesterday we unveiled RhoGallery as a new service available on RhoHub in Beta form. RhoGallery lets administrators manage the set of apps exposed to their users (whether those apps were written with Rhodes or not). And makes it easy for them to get mobile apps onto their devices. It gives users a single place to launch all of their important enterprise apps from. RhoGallery consists of a management console for “galleries” on RhoHub. And a RhoGallery app that users load onto their devices. That app is then used by those user to install (the first time) and subsequently launch their important apps. Even for an individual developer with one or a few apps, RhoGallery makes it easy to expose those apps to their users. RhoGallery handles inviting the users and determining the appropriate downloads to provide them.</p>
 
-<p>We encourage you to sign up for RhoHub and give it a try. Take a look at the RhoHub 2.0 tutorial and the RhoHub 2.0 training webinar. On Friday we’ll be holding another live training webinar on building iPhone apps on RhoHub (and submitting them to the App Store) that you can sign up for for free.</p>
+<p>RhoGallery provides:</p>
+
+<ul>
+<li>administrator management of exposed apps to end users</li>
+<li>central user launching of the apps that they need from one place</li>
+<li>automatic provisioning of appropriate apps for end users</li>
+</ul>
+
+
+<p>To get started, create a Gallery and upload or link to one or more apps. For each app upload one or more builds for various smartphones. These can be from:</p>
+
+<ul>
+<li>local files that you have available (.apk files for Android, .cod/.jad files for BlackBerry, .cab files for Windows Mobile, .ipa/.plist files for iOS)</li>
+<li>from RhoHub builds that you have made</li>
+<li>from some external remote URL (note that they do not have to have been built with Rhodes or even built by your own enterprise).</li>
+</ul>
+
+
+<p>Now invite some Consumers (a term to refer to “end users” or “enterprise workers”) to that Gallery. Those “consumers” or users will then receive SMSes or emails with a link to install the RhoGallery app. After installing they can then download the apps to their device. RhoGallery is included with each RhoHub subscription level (e.g. $99 per month for 100 devices, and $499 for 1000 devices).</p>
+
+<p>Please give RhoGallery a try and give us your feedback. We will have a few months of Beta as we incorporate your suggestions and then launch the product formally towards the end of the year.</p>
+
+<p><img src="http://img.skitch.com/20101110-gakm45t5y6i3myea378h5wn3k4.render.png"/></p>
 
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
