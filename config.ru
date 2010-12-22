@@ -4,5 +4,5 @@ Bundler.require(:default)
 
 require "rack/jekyll"
 
-use Rhomobile::Nav::Base, {:nav_host => "http://rhohub.local"}
+use Rhomobile::Nav::Base
 run Rack::Jekyll.new
