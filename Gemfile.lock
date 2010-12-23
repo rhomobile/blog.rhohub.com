@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/rhomobile/rhomobile-nav.git
-  revision: a67e9909ecb97eaf5ceaa525278fd714ea418b7e
+  revision: 4c78bf3e6aa605541f00f2cb09b7aec8dc3374ba
   specs:
-    rhomobile-nav (0.0.4)
+    rhomobile-nav (0.0.14)
 
 GEM
   remote: http://rubygems.org/
@@ -32,4 +32,4 @@ DEPENDENCIES
   jekyll
   liquid (= 2.1.3)
   rack-jekyll
-  rhomobile-nav (= 0.0.4)!
+  rhomobile-nav (= 0.0.14)!
