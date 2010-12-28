@@ -68,39 +68,6 @@
 
 	<div id="container">
 		<div id="wrapper">
-			<div class="header">
-				<div class="logos">
-					<a href="http://rhomobile.com" class="logo_rhomobile">Rhomobile</a>
-					<a href="http://app.rhohub.com" class="logo_rhohub">RhoHub</a>
-				</div>
-
-				<div id="menu">
-					<ul>
-						<li ><a href="http://app.rhohub.com" class="">Home</a></li>
-						<li ><a href="http://app.rhohub.com/overview" class="">How to Use</a></li>
-						<li ><a href="http://app.rhohub.com/pricing" class="">Pricing</a></li>
-						<li><a target="_blank" href="http://wiki.rhomobile.com/index.php/RhoHub">Docs</a></li>
-						<li><a href="mailto:support@rhohub.com?subject=[RhoHub]" title="Submit a request">Support</a></li>
-						<li class="separator">
-							<img src="/images/tabs_separator.png">
-						</li>
-						<script>
-						if ( Get_Cookie('rho_user') != null && Get_Cookie('rho_user') != 0) 
-						{	
-							document.write("<li><a class='logout' href='https://app.rhohub.com/"+Get_Cookie( 'rho_user' )+"'>My Account</a></li>")
-							document.write("<li class='separator'><img src='/images/tabs_separator.png'></li>")
-							document.write("<li><a class='logout' onclick='logout()' href='javascript:void(0)'>Logout</a></li>")
-						}
-						if ( Get_Cookie('rho_user') == null || Get_Cookie('rho_user') == 0) 
-						document.write("<li><a class='logout' href='http://app.rhohub.com/login'>Login</a></li>")
-						</script>
-						<li><a href="/atom.xml" title="RSS feed"><img class="rss_feed" src="/images/feed.png" />Subscribe</a></li>
-
-					</ul>
-				</div>
-			</div>
-
-
 			<div id="yield_container">
 				<h2 class="title">Archives</h2>
 <div class="line"></div>
@@ -139,35 +106,9 @@
 </ul>
 <br/> 
 			</div>
-
 		</div><!--END wrapper -->
 		<br class="clear"/>
-		<div id="footer">
-			<div class="footer_content">
-				<div id="foot_lefts" class="foot_left">
-					<a href="http://www.rhomobile.com" > <img src="/images/landing_footer_logo.png" /></a><a href="/" > <img src="/images/landing_footer_rhohub.png" /></a>
-					<p>© 2010 <a href="http://www.rhomobile.com/">Rhomobile</a> All rights reserved.</p>
-				</div>
-				<div class="foot_right">
-					<ul class="ul_footer">
-						<li><a href="http://app.rhohub.com">Home</a></li>
-						<li>|</li>
-						<li><a href="http://app.rhohub.com/how_to_use">How to Use</a></li>
-						<li>|</li>
-						<li><a href="http://app.rhohub.com/pricing">Pricing</a></li>
-						<li>|</li>
-						<li><a class="largea3" target="_blank" href="http://wiki.rhomobile.com/index.php/RhoHub">Docs</a></li>
-						<li>|</li>
-						<li><a href="http://app.rhohub.com/terms">Terms of Service</a></li>
-						<li>|</li>
-						<li><a href="http://www.twitter.com/rhohub">Status</a></li>
-					</ul>
-				</div>
-				<br class="clear"/>
-			</div>
-		</div><!-- FOOTER END-->
 	</div>
-</div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
