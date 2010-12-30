@@ -49,29 +49,6 @@ h1 a{
 	overflow:hidden;
 	width:960px;
 }
-.header {
-	height:80px;
-	position:relative;
-}
-.header .logos {
-	overflow:hidden;
-	position:absolute;
-	top:9px;
-}
-.header .logos a.logo_rhomobile {
-	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll 0 0 transparent;
-	float:left;
-	height:38px;
-	text-indent:-3000px;
-	width:56px;
-}
-.header .logos a.logo_rhohub {
-	background:url("../images/rhomobile_rhohub_logo.png") no-repeat scroll -56px 0 transparent;
-	float:left;
-	height:38px;
-	text-indent:-3000px;
-	width:145px;
-}
 #menu {
 	color:#CCCCCC;
 	float:right;
@@ -149,55 +126,6 @@ top:3px;
 	background:none repeat scroll 0 0 #FFFFFF;
 	overflow:hidden;
 	padding:17px 17px 30px;
-}
-#footer {
-	background:none repeat scroll 0 0 #363736;
-	bottom:0;
-	height:80px;
-	margin-top:15px;
-	position:absolute;
-	width:100%;
-}
-#footer .footer_content {
-	margin:0 auto;
-	width:962px;
-}
-#footer .footer_content .foot_left {
-	float:left;
-}
-#footer .footer_content div {
-	padding-top:15px;
-}
-#footer a {
-	color:#FFFFFF;
-}
-#footer .footer_content .foot_left a img {
-	border:medium none;
-}
-#footer .footer_content p {
-	color:#FFFFFF;
-	font-size:12px;
-	margin-top:10px;
-}
-#footer .footer_content .foot_right {
-	float:right;
-}
-.ul_footer {
-	font-size:12px;
-	list-style-type:none;
-	margin-top:5px;
-	padding-left:0;
-}
-.ul_footer li {
-	color:#FFFFFF;
-	display:inline;
-	padding-right:5px;
-}
-.ul_footer li a {
-	color:#FFFFFF;
-}
-.ul_footer li a:hover {
-	text-decoration:none;
 }
 clear {
 	clear:both;
