@@ -1,7 +1,7 @@
 require "rubygems"
 require "bundler"
 Bundler.require(:default)
-
+require 'rack'
 require "rack/jekyll"
 require "rhomobile/nav"
 
@@ -11,4 +11,5 @@ use Rhomobile::Nav::Base, {
     :nav_host => "http://localhost:8080/#{ENV["RACK_ENV"]}",
     :subscribe => true
  }
+use Rack::ContentLength
 run Rack::Jekyll.new
