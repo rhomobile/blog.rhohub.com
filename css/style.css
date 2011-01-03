@@ -45,9 +45,10 @@ h1 a{
 }
 #wrapper {
 	display:block;
-	margin:0 auto 90px;
+	margin:0 auto !important;
 	overflow:hidden;
 	width:960px;
+	padding-bottom:85px;
 }
 #menu {
 	color:#CCCCCC;
@@ -122,12 +123,9 @@ top:3px;
 	text-decoration:none;
 }
 #yield_container {
-	-moz-border-radius:15px 15px 15px 15px;
-	background:none repeat scroll 0 0 #FFFFFF;
-	overflow:hidden;
-	padding:17px 17px 30px;
+ padding: 35px 17px !important;
 }
-clear {
+.clear {
 	clear:both;
 	display:block;
 }
