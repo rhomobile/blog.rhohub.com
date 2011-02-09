@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-02-08T15:21:33-10:00</updated>
+ <updated>2011-02-08T15:24:11-10:00</updated>
  <id></id>
 
  
@@ -17,7 +17,7 @@
    <id>/2011/02/07/added-support-for-new-heroku-logging</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/02/07/added-support-for-new-heroku-logging.html&quot;&gt;Added Support for New Heroku Logging&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;Today we added support for &lt;a href=&quot;http://heroku.com/&quot;&gt;Heroku&lt;/a&gt; &lt;a href=&quot;http://blog.heroku.com/archives/2011/2/3/new_logging_now_in_general_availability/&quot;&gt;advanced logging&lt;/a&gt;.  All new and existing &lt;a href=&quot;http://rhomobile.com/products/rhosync&quot;&gt;RhoSync&lt;/a&gt; applications can take advantage of the advanced logging system automatically.  Just deploy your RhoSync app if it isn't deployed already and click on the &quot;Heroku Logs&quot; button:&lt;/p&gt;
+&lt;p&gt;Today we added support for Heroku &lt;a href=&quot;http://blog.heroku.com/archives/2011/2/3/new_logging_now_in_general_availability/&quot;&gt;advanced logging&lt;/a&gt;.  All new and existing &lt;a href=&quot;http://rhomobile.com/products/rhosync&quot;&gt;RhoSync&lt;/a&gt; applications can take advantage of the advanced logging system automatically.  Just deploy your RhoSync app if it isn't deployed already and click on the &quot;Heroku Logs&quot; button:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20110209-pneticn11m9762241gj2ea7bya.png&quot;/&gt;&lt;/p&gt;
 
