@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Added Support for New Heroku Logging
+title: New Heroku Logging
 ---
 
 [{{ page.title }}]({{ page.url }})
