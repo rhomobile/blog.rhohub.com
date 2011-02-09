@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Archive</title>
+	<title>Added Support for New Heroku Logging</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
@@ -75,46 +75,45 @@
 	<div id="container">
 		<div id="wrapper">
 			<div id="yield_container">
-				<h2 class="title">Archives</h2>
-<div class="line"></div>
+					<div class="navigation" id="nav-above">
+		<div class="nav-previous"><a href="/index.html"><span class="meta-nav">←</span> Back to Posts</a></div>
+		<div class="nav-next"></div>
+	</div>
 
-<div class="navigation" id="nav-above">
-	<div class="nav-previous"><a href="/index.html"><span class="meta-nav">←</span> Back to Blog</a></div>
-	<div class="nav-next"></div>
-</div>
+<div class="post">
+	<div class="date">
+		<span class="month">February</span>
+		<span class="day">07</span>
+		<span>2011</span>
+	</div><!-- END date -->
 
-<ul id="archive">
+	<div class="post_content">
+	   <h1><a href="/2011/02/07/added-support-for-new-heroku-logging.html">Added Support for New Heroku Logging</a></h1>
 
-<li>
-	<span>07 Feb 2011</span><h4><a href="/2011/02/07/added-support-for-new-heroku-logging.html" title="Added Support for New Heroku Logging">Added Support for New Heroku Logging</a></h4> 
-</li>
+<p>Today we added support for <a href="http://heroku.com/">Heroku's</a> <a href="http://blog.heroku.com/archives/2011/2/3/new_logging_now_in_general_availability/">advanced logging</a>.  All new and existing <a href="http://rhomobile.com/products/rhosync">RhoSync</a> applications can take advantage of the advanced logging system automatically.  Just deploy your RhoSync app if it isn't deployed already and click on the "Heroku Logs" button:</p>
 
-<li>
-	<span>09 Dec 2010</span><h4><a href="/2010/12/09/ios-build-cloud-supports-42.html" title="Mac Build Cloud Now Supports iOS SDK 4.2">Mac Build Cloud Now Supports iOS SDK 4.2</a></h4> 
-</li>
+<p><img src="https://img.skitch.com/20110209-pneticn11m9762241gj2ea7bya.png"/></p>
 
-<li>
-	<span>07 Dec 2010</span><h4><a href="/2010/12/07/rhogallery-updates-and-video.html" title="RhoGallery Updates and Video">RhoGallery Updates and Video</a></h4> 
-</li>
+<p>This will bring up a window showing the log output of your RhoSync application:</p>
 
-<li>
-	<span>09 Nov 2010</span><h4><a href="/2010/11/09/rhogallery-the-enterprise-app-store.html" title="RhoGallery – The Enterprise App Store">RhoGallery – The Enterprise App Store</a></h4> 
-</li>
+<p><img src="https://img.skitch.com/20110209-ms6u1we8s6ycd73wuaqybhcgx9.png"/></p>
 
-<li>
-	<span>21 Oct 2010</span><h4><a href="/2010/10/21/rhohub-ie-support.html" title="RhoHub now supports IE 8+">RhoHub now supports IE 8+</a></h4> 
-</li>
+<p>For more details on the output format and understanding the new Heroku logging system, please visit the <a href="http://docs.heroku.com/logging">docs</a>.</p>
 
-<li>
-	<span>20 Oct 2010</span><h4><a href="/2010/10/20/new-blog-site.html" title="New Blog!">New Blog!</a></h4> 
-</li>
-
-<li>
-	<span>30 Sep 2010</span><h4><a href="/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html" title="RhoHub adds iPhone/iPad build capability">RhoHub adds iPhone/iPad build capability</a></h4> 
-</li>
-
-</ul>
-<br/> 
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://rhohubblog.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rhohubblog">comments powered by Disqus.</a></noscript>
+	</div><!--END post_content -->
+</div> 
 			</div>
 		</div><!--END wrapper -->
 	</div><!-- end container -->
