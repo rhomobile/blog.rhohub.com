@@ -1,5 +1,5 @@
 development:
-    rhonav_host: http://localhost:8080
+    rhonav_host: http://rhohub.local
 
 production:
-    rhonav_host: http://nav.rhohub.com
+    rhonav_host: http://rhohub.com
