@@ -2,4 +2,4 @@ development:
     rhonav_host: http://rhohub.local
 
 production:
-    rhonav_host: http://rhohub.com
+    rhonav_host: https://app.rhohub.com
