@@ -4,11 +4,26 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-02-15T17:30:16-08:00</updated>
+ <updated>2011-02-24T12:52:29-08:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>Announcing new RhoHub Pricing - Basic is now Free!</title>
+   <link href="/2011/02/24/announcing-new-pricing-basic-is-free.html"/>
+   <updated>2011-02-24T00:00:00-08:00</updated>
+   <id>/2011/02/24/announcing-new-pricing-basic-is-free</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/02/24/announcing-new-pricing-basic-is-free.html&quot;&gt;Announcing new RhoHub Pricing - Basic is now Free!&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Based on overwhelming feedback we've received, we've decided to change our pricing for RhoHub.  Starting today, the Basic Plan is now free and we've removed the old Free Plan.  This means we now offer unlimited Rhodes device builds for free!&lt;/p&gt;
+
+&lt;p&gt;If you currently are using the trial period on a Basic Plan, you won't be charged any subscription fees now or in the future.  If you currently have an active Basic Plan, we have already refunded last month's subscription and you won't be charged any further subscription fees.  Please &lt;a href=&quot;mailto:support@rhomobile.com&quot;&gt;contact us&lt;/a&gt; if you have any questions or comments about billing.&lt;/p&gt;
+
+&lt;p&gt;Also, our Premium plan now includes &lt;a href=&quot;http://rhomobile.com/products/rhodes/commerciallicense/&quot;&gt;Commercial Support&lt;/a&gt; and the Enterprise plan includes &lt;a href=&quot;http://rhomobile.com/products/rhodes/enterpriselicense/&quot;&gt;Enterprise Support&lt;/a&gt;.  Check out the new pricing options here: &lt;a href=&quot;http://rhohub.com/pricing&quot;&gt;http://rhohub.com/pricing&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Build Your Own RhoGallery Mobile</title>
