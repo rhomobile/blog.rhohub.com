@@ -4,11 +4,37 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-02-24T12:52:29-08:00</updated>
+ <updated>2011-03-29T11:10:34-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>Introducing the RhoHub Editor</title>
+   <link href="/2011/03/26/introducing-rhohub-editor.html"/>
+   <updated>2011-03-26T00:00:00-07:00</updated>
+   <id>/2011/03/26/introducing-rhohub-editor</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/03/26/introducing-rhohub-editor.html&quot;&gt;Introducing the RhoHub Editor&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;We are excited to announce the launch of RhoHub 3.0 including a new HTML5 project editor complete with a git interface!  The editor is still in beta as we work out all the bugs, so please let us know what you think!  Currently the editor supports:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Editing Ruby/HTML/CSS/JavaScript files&lt;/li&gt;
+&lt;li&gt;Viewing image files&lt;/li&gt;
+&lt;li&gt;Uploading of local files into the editor&lt;/li&gt;
+&lt;li&gt;Adding, removing, renaming of files and directories&lt;/li&gt;
+&lt;li&gt;Git commit and reset actions to files&lt;/li&gt;
+&lt;li&gt;Building your Rhodes app and deploying your RhoSync app right from the editor!&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In case you missed Friday's webinar, here's a video:&lt;/p&gt;
+
+&lt;iframe src=&quot;http://player.vimeo.com/video/21215373?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=de0909&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Announcing new RhoHub Pricing - Basic is now Free!</title>
