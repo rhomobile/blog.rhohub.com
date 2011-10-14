@@ -6,7 +6,7 @@ title: Introducing the RhoGallery API
 [{{ page.title }}]({{ page.url }})
 ==================================
 
-Since we [launched RhoGallery last year](/2010/11/09/rhogallery-the-enterprise-app-store.html),  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find [on github](https://github.com/rhomobile/rhogallery-api).  
+Since we [launched RhoGallery last year](http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html),  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find [on github](https://github.com/rhomobile/rhogallery-api).  
 
 
 Getting started with the RhoGallery API from ruby is simple:

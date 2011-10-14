@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-09-26T15:59:21-07:00</updated>
+ <updated>2011-10-14T12:08:24-07:00</updated>
  <id></id>
 
  
@@ -17,7 +17,7 @@
    <id>/2011/09/26/rhogallery-api</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/09/26/rhogallery-api.html&quot;&gt;Introducing the RhoGallery API&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;Since we &lt;a href=&quot;/2010/11/09/rhogallery-the-enterprise-app-store.html&quot;&gt;launched RhoGallery last year&lt;/a&gt;,  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find &lt;a href=&quot;https://github.com/rhomobile/rhogallery-api&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since we &lt;a href=&quot;http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html&quot;&gt;launched RhoGallery last year&lt;/a&gt;,  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find &lt;a href=&quot;https://github.com/rhomobile/rhogallery-api&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Getting started with the RhoGallery API from ruby is simple:&lt;/p&gt;
 
