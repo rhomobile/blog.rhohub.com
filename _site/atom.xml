@@ -4,20 +4,20 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-10-27T14:07:26-07:00</updated>
+ <updated>2011-10-27T14:09:53-07:00</updated>
  <id></id>
 
  
  
  
  <entry>
-   <title>RhoHub Adds iOS 5 and Android 4 Support</title>
+   <title>iOS 5 and Android 4 Support</title>
    <link href="/2011/10/27/ios5-android-4-support.html"/>
    <updated>2011-10-27T00:00:00-07:00</updated>
    <id>/2011/10/27/ios5-android-4-support</id>
-   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/10/27/ios5-android-4-support.html&quot;&gt;RhoHub Adds iOS 5 and Android 4 Support&lt;/a&gt;&lt;/h1&gt;
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/10/27/ios5-android-4-support.html&quot;&gt;iOS 5 and Android 4 Support&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;We're happy to announce &lt;a href=&quot;http://www.apple.com/ios/&quot;&gt;iOS 5&lt;/a&gt; and Android 4.0 &lt;a href=&quot;http://developer.android.com/sdk/android-4.0-highlights.html&quot;&gt;Ice Cream Sandwich&lt;/a&gt; support in the RhoHub build service.  We've also updated the default version of rhodes 3.2 so now your applications will build on the latest Rhodes and OS versions available.&lt;/p&gt;
+&lt;p&gt;We're happy to announce iOS 5 and Android 4.0 Ice Cream Sandwich support in the RhoHub build service.  We've also updated the default version of rhodes 3.2 so now your applications will build on the latest Rhodes and OS versions available.&lt;/p&gt;
 
 &lt;p&gt;Cheers!&lt;/p&gt;
 </content>
