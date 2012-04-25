@@ -4,10 +4,10 @@ html, body {
 	padding:0;
 }
 body {
-	background:url("../images/dash_header.png") repeat-x scroll 0 0 transparent;
 	color:#000000;
 	font-size:14px;
 	font:12px Arial,Helvetica,sans-serif;
+	padding-top:15px;
 }
 h2{
 color:#000;
