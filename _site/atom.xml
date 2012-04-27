@@ -4,11 +4,42 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2011-10-27T14:09:53-07:00</updated>
+ <updated>2012-04-27T15:04:57-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>RhoHub Gets a Facelift</title>
+   <link href="/2012/04/27/rhohub-has-a-facelift.html"/>
+   <updated>2012-04-27T00:00:00-07:00</updated>
+   <id>/2012/04/27/rhohub-has-a-facelift</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/04/27/rhohub-has-a-facelift.html&quot;&gt;RhoHub Gets a Facelift&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using twitter bootstrap and we've made several enhancements to make pages load faster.&lt;/p&gt;
+
+&lt;h2&gt;Project Tabs&lt;/h2&gt;
+
+&lt;p&gt;Projects are now organized with a tab layout allowing more space for information.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20120427-r2hgxk3t1qhtdpunq3xafa64tc.png&quot; width=&quot;540&quot;/&gt;&lt;/p&gt;
+
+&lt;h2&gt;More Info&lt;/h2&gt;
+
+&lt;p&gt;Help on the site is now easier to find with the &quot;Help&quot; and &quot;More Info&quot; buttons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20120427-xt8x161ypqnqk2sxhsnpiiys5h.png&quot; width=&quot;540&quot;/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Profiles&lt;/h2&gt;
+
+&lt;p&gt;Your account profile can now be accessed in the upper-right corner.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20120427-r9u4btu8j78pbm7814armji7mx.png&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us know what you think!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>iOS 5 and Android 4 Support</title>

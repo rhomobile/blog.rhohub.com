@@ -1,5 +1,8 @@
 development:
     rhonav_host: http://rhohub.local
 
+staging:
+    rhonav_host: https://appstaging.rhohub.com
+
 production:
     rhonav_host: https://app.rhohub.com
