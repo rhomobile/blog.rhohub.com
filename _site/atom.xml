@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2012-04-27T15:04:57-07:00</updated>
+ <updated>2012-04-27T15:10:13-07:00</updated>
  <id></id>
 
  
@@ -17,7 +17,7 @@
    <id>/2012/04/27/rhohub-has-a-facelift</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/04/27/rhohub-has-a-facelift.html&quot;&gt;RhoHub Gets a Facelift&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using twitter bootstrap and we've made several enhancements to make pages load faster.&lt;/p&gt;
+&lt;p&gt;As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using &lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;twitter bootstrap&lt;/a&gt; and we've made several enhancements to make pages load faster.&lt;/p&gt;
 
 &lt;h2&gt;Project Tabs&lt;/h2&gt;
 

@@ -6,7 +6,7 @@ title: RhoHub Gets a Facelift
 [{{ page.title }}]({{ page.url }})
 ==================================
 
-As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using twitter bootstrap and we've made several enhancements to make pages load faster.
+As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using [twitter bootstrap](http://twitter.github.com/bootstrap/) and we've made several enhancements to make pages load faster.
 
 ## Project Tabs
 
