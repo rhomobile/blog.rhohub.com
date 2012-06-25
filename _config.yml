@@ -10,7 +10,6 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 pygments:    false
-markdown:    rdiscount
 permalink:   date
 
 exclude: Gemfile, Gemfile.lock, README.md, config.ru
@@ -22,5 +21,6 @@ maruku:
   png_dir:    images/latex
   png_url:    /images/latex
 
-rdiscount:
-  extensions: []
+markdown: redcarpet2
+redcarpet:
+  extensions: ["fenced_code_blocks"]

@@ -4,11 +4,47 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2012-04-27T15:10:13-07:00</updated>
+ <updated>2012-06-25T16:22:25-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>Git SSH access over HTTPS port</title>
+   <link href="/2012/06/25/git-ssh-access-over-https-port.html"/>
+   <updated>2012-06-25T00:00:00-07:00</updated>
+   <id>/2012/06/25/git-ssh-access-over-https-port</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/06/25/git-ssh-access-over-https-port.html&quot;&gt;Git SSH access over HTTPS port&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;We are happy to announce SSH git access over port 443 (HTTPS). If you have trouble accessing your repositories hosted on git.rhohub.com over port 22 (the default ssh port) due to a firewall or proxy limitation, you can now clone and push using firewall.git.rhohub.com on port 443 instead.  &lt;/p&gt;
+
+&lt;h2&gt;Testing&lt;/h2&gt;
+
+&lt;p&gt;To test connectivity, run the following command:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ ssh -T -p 443 git@firewall.git.rhohub.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;Empty git command...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Use port 443 by default&lt;/h2&gt;
+
+&lt;p&gt;To make the changes permanent, create or edit the file &lt;code&gt;~/.ssh/config&lt;/code&gt; and add the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;Host git.rhohub.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;    Hostname firewall.git.rhohub.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;    Port 443
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For more information about using SSH over port 443 and the rationale behind this setup, please see the excellent &lt;a href=&quot;https://help.github.com/articles/using-ssh-over-the-https-port&quot;&gt;GitHub guide&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>RhoHub Gets a Facelift</title>
@@ -17,7 +53,7 @@
    <id>/2012/04/27/rhohub-has-a-facelift</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/04/27/rhohub-has-a-facelift.html&quot;&gt;RhoHub Gets a Facelift&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using &lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;twitter bootstrap&lt;/a&gt; and we've made several enhancements to make pages load faster.&lt;/p&gt;
+&lt;p&gt;As you may have already noticed, we made some signifcant changes to the RhoHub interface yesterday.  Most of the site is now using &lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;twitter bootstrap&lt;/a&gt; and we&amp;#39;ve made several enhancements to make pages load faster.&lt;/p&gt;
 
 &lt;h2&gt;Project Tabs&lt;/h2&gt;
 
@@ -27,7 +63,7 @@
 
 &lt;h2&gt;More Info&lt;/h2&gt;
 
-&lt;p&gt;Help on the site is now easier to find with the &quot;Help&quot; and &quot;More Info&quot; buttons.&lt;/p&gt;
+&lt;p&gt;Help on the site is now easier to find with the &amp;quot;Help&amp;quot; and &amp;quot;More Info&amp;quot; buttons.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20120427-xt8x161ypqnqk2sxhsnpiiys5h.png&quot; width=&quot;540&quot;/&gt;&lt;/p&gt;
 
@@ -48,7 +84,7 @@
    <id>/2011/10/27/ios5-android-4-support</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/10/27/ios5-android-4-support.html&quot;&gt;iOS 5 and Android 4 Support&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;We're happy to announce iOS 5 and Android 4.0 Ice Cream Sandwich support in the RhoHub build service.  We've also updated the default version of rhodes 3.2 so now your applications will build on the latest Rhodes and OS versions available.&lt;/p&gt;
+&lt;p&gt;We&amp;#39;re happy to announce iOS 5 and Android 4.0 Ice Cream Sandwich support in the RhoHub build service.  We&amp;#39;ve also updated the default version of rhodes 3.2 so now your applications will build on the latest Rhodes and OS versions available.&lt;/p&gt;
 
 &lt;p&gt;Cheers!&lt;/p&gt;
 </content>
@@ -61,43 +97,43 @@
    <id>/2011/09/26/rhogallery-api</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/09/26/rhogallery-api.html&quot;&gt;Introducing the RhoGallery API&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;Since we &lt;a href=&quot;http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html&quot;&gt;launched RhoGallery last year&lt;/a&gt;,  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find &lt;a href=&quot;https://github.com/rhomobile/rhogallery-api&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since we &lt;a href=&quot;http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html&quot;&gt;launched RhoGallery last year&lt;/a&gt;,  one of the more tedious parts of the system was consumer and group management.  That&amp;#39;s why today we&amp;#39;re excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We&amp;#39;re also releasing a companion ruby client you can find &lt;a href=&quot;https://github.com/rhomobile/rhogallery-api&quot;&gt;on github&lt;/a&gt;.  &lt;/p&gt;
 
 &lt;p&gt;Getting started with the RhoGallery API from ruby is simple:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ gem install rhogallery
 
-&lt;pre&gt;&lt;code&gt;$ gem install rhogallery
-
-require 'rhogallery'
+require &amp;#39;rhogallery&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Next, find your RhoHub API token on your profile page:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20110926-k69arfxwk7mmmjjhagjqkwee2k.png&quot;  width=&quot;800&quot;/&gt;&lt;/p&gt;
 
 &lt;p&gt;Then, initialize the RhoGallery API with your username and token:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;RhoGallery.credentials = {:username =&amp;gt; 'lars', :token =&amp;gt; '4133af952fe67aba3ec23f73264547398225bad22a23a0000d'}
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;RhoGallery.credentials = {:username =&amp;gt; &amp;#39;lars&amp;#39;, :token =&amp;gt; &amp;#39;4133af952fe67aba3ec23f73264547398225bad22a23a0000d&amp;#39;}
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;That's it!  Now you can create,read,update or delete RhoGallery consumers and groups:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;RhoGallery::Consumer.find_all
-    =&amp;gt; [{&quot;name&quot;:&quot;John Doe&quot;,&quot;devices&quot;:[&quot;ios&quot;,&quot;android&quot;,&quot;blackberry&quot;],&quot;deactivated_id&quot;:null,
-            &quot;created_at&quot;:&quot;2011-01-14T17:49:42Z&quot;,&quot;cell&quot;:&quot;+555555&quot;,
-            &quot;updated_at&quot;:&quot;2011-06-21T21:14:12Z&quot;,
-            &quot;tags&quot;:&quot;&quot;,&quot;deleted&quot;:false,&quot;password&quot;:&quot;f3df5b5853c26e9b664262a5f590df8d&quot;,
-            &quot;login&quot;:&quot;john&quot;,&quot;invited&quot;:true,
-            &quot;email&quot;:&quot;john@doe.com&quot;,&quot;active&quot;:true}]
+&lt;p&gt;That&amp;#39;s it!  Now you can create,read,update or delete RhoGallery consumers and groups:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;RhoGallery::Consumer.find_all
+    =&amp;gt; [{&amp;quot;name&amp;quot;:&amp;quot;John Doe&amp;quot;,&amp;quot;devices&amp;quot;:[&amp;quot;ios&amp;quot;,&amp;quot;android&amp;quot;,&amp;quot;blackberry&amp;quot;],&amp;quot;deactivated_id&amp;quot;:null,
+            &amp;quot;created_at&amp;quot;:&amp;quot;2011-01-14T17:49:42Z&amp;quot;,&amp;quot;cell&amp;quot;:&amp;quot;+555555&amp;quot;,
+            &amp;quot;updated_at&amp;quot;:&amp;quot;2011-06-21T21:14:12Z&amp;quot;,
+            &amp;quot;tags&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;deleted&amp;quot;:false,&amp;quot;password&amp;quot;:&amp;quot;f3df5b5853c26e9b664262a5f590df8d&amp;quot;,
+            &amp;quot;login&amp;quot;:&amp;quot;john&amp;quot;,&amp;quot;invited&amp;quot;:true,
+            &amp;quot;email&amp;quot;:&amp;quot;john@doe.com&amp;quot;,&amp;quot;active&amp;quot;:true}]
 
 
 consumer = RhoGallery::Consumer.new({
-    :login =&amp;gt; &quot;some_login&quot;, :name =&amp;gt; &quot;some name&quot;, :cell =&amp;gt; &quot;+55555&quot;, :email =&amp;gt; &quot;email@email.com&quot;
+    :login =&amp;gt; &amp;quot;some_login&amp;quot;, :name =&amp;gt; &amp;quot;some name&amp;quot;, :cell =&amp;gt; &amp;quot;+55555&amp;quot;, :email =&amp;gt; &amp;quot;email@email.com&amp;quot;
 })
-=&amp;gt; #&amp;lt;RhoGallery::Consumer:0x1018881a8 @attributes={:login =&amp;gt; &quot;some_login&quot;, :name =&amp;gt; &quot;some name&quot;, :cell =&amp;gt; &quot;+55555&quot;, :email =&amp;gt; &quot;email@email.com&quot;}&amp;gt;
+=&amp;gt; #&amp;lt;RhoGallery::Consumer:0x1018881a8 @attributes={:login =&amp;gt; &amp;quot;some_login&amp;quot;, :name =&amp;gt; &amp;quot;some name&amp;quot;, :cell =&amp;gt; &amp;quot;+55555&amp;quot;, :email =&amp;gt; &amp;quot;email@email.com&amp;quot;}&amp;gt;
 
 consumer.save
 =&amp;gt; true
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Complete documentation is available on the &lt;a href=&quot;https://github.com/rhomobile/rhogallery-api#readme&quot;&gt;RhoGallery API github project&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -121,11 +157,9 @@ consumer.save
 &lt;li&gt;Building your Rhodes app and deploying your RhoSync app right from the editor!&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;p&gt;In case you missed Friday's webinar, here's a video:&lt;/p&gt;
+&lt;p&gt;In case you missed Friday&amp;#39;s webinar, here&amp;#39;s a video:&lt;/p&gt;
 
 &lt;iframe src=&quot;http://player.vimeo.com/video/21215373?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=de0909&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
 </content>
  </entry>
  
@@ -136,9 +170,9 @@ consumer.save
    <id>/2011/02/24/announcing-new-pricing-basic-is-free</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/02/24/announcing-new-pricing-basic-is-free.html&quot;&gt;Announcing new RhoHub Pricing - Basic is now Free!&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;Based on overwhelming feedback we've received, we've decided to change our pricing for RhoHub.  Starting today, the Basic Plan is now free and we've removed the old Free Plan.  This means we now offer unlimited Rhodes device builds for free!&lt;/p&gt;
+&lt;p&gt;Based on overwhelming feedback we&amp;#39;ve received, we&amp;#39;ve decided to change our pricing for RhoHub.  Starting today, the Basic Plan is now free and we&amp;#39;ve removed the old Free Plan.  This means we now offer unlimited Rhodes device builds for free!  &lt;/p&gt;
 
-&lt;p&gt;If you currently are using the trial period on a Basic Plan, you won't be charged any subscription fees now or in the future.  If you currently have an active Basic Plan, we have already refunded last month's subscription and you won't be charged any further subscription fees.  Please &lt;a href=&quot;mailto:support@rhomobile.com&quot;&gt;contact us&lt;/a&gt; if you have any questions or comments about billing.&lt;/p&gt;
+&lt;p&gt;If you currently are using the trial period on a Basic Plan, you won&amp;#39;t be charged any subscription fees now or in the future.  If you currently have an active Basic Plan, we have already refunded last month&amp;#39;s subscription and you won&amp;#39;t be charged any further subscription fees.  Please &lt;a href=&quot;mailto:support@rhomobile.com&quot;&gt;contact us&lt;/a&gt; if you have any questions or comments about billing.&lt;/p&gt;
 
 &lt;p&gt;Also, our Premium plan now includes &lt;a href=&quot;http://rhomobile.com/products/rhodes/commerciallicense/&quot;&gt;Commercial Support&lt;/a&gt; and the Enterprise plan includes &lt;a href=&quot;http://rhomobile.com/products/rhodes/enterpriselicense/&quot;&gt;Enterprise Support&lt;/a&gt;.  Check out the new pricing options here: &lt;a href=&quot;http://rhohub.com/pricing&quot;&gt;http://rhohub.com/pricing&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -151,7 +185,7 @@ consumer.save
    <id>/2011/02/15/introducing-build-your-own-rhogallery-mobile</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/02/15/introducing-build-your-own-rhogallery-mobile.html&quot;&gt;Introducing Build Your Own RhoGallery Mobile&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;We are happy to announce today a powerful new RhoGallery feature: building your own custom RhoGallery Mobile.  From the &quot;Galleries&quot; tab, you can select the &quot;RhoGallery Mobile&quot; section and customize the look and feel as well as supported platforms your RhoGallery consumers will see when they receive invitations.&lt;/p&gt;
+&lt;p&gt;We are happy to announce today a powerful new RhoGallery feature: building your own custom RhoGallery Mobile.  From the &amp;quot;Galleries&amp;quot; tab, you can select the &amp;quot;RhoGallery Mobile&amp;quot; section and customize the look and feel as well as supported platforms your RhoGallery consumers will see when they receive invitations.&lt;/p&gt;
 
 &lt;p&gt;As you change the look and feel of RhoGallery Mobile, the preview pane on the left will immediately display how your changes will look on a device.&lt;/p&gt;
 
@@ -159,7 +193,7 @@ consumer.save
 
 &lt;p&gt;You can then enable the custom landing page by selecting the link at the bottom.  This will send the custom landing page instead of the default page when you invite consumers and groups.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20110216-rck4c12ej5ifiuyqm96cpbdguk.png&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20110216-rck4c12ej5ifiuyqm96cpbdguk.png&quot;/&gt; &lt;/p&gt;
 
 &lt;p&gt;Your gallery consumers will see this list of published builds when they navigate to the bit.ly link provided in the invitation.&lt;/p&gt;
 
@@ -178,7 +212,7 @@ consumer.save
    <id>/2011/02/07/new-heroku-logging</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2011/02/07/new-heroku-logging.html&quot;&gt;New Heroku Logging&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;Today we added support for Heroku advanced logging.  All new and existing RhoSync applications can take advantage of the advanced logging system automatically.  Just deploy your RhoSync app if it isn't deployed already and click on the &quot;Heroku Logs&quot; button:&lt;/p&gt;
+&lt;p&gt;Today we added support for Heroku advanced logging.  All new and existing RhoSync applications can take advantage of the advanced logging system automatically.  Just deploy your RhoSync app if it isn&amp;#39;t deployed already and click on the &amp;quot;Heroku Logs&amp;quot; button:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://img.skitch.com/20110209-pneticn11m9762241gj2ea7bya.png&quot;/&gt;&lt;/p&gt;
 
@@ -210,12 +244,11 @@ consumer.save
    <id>/2010/12/07/rhogallery-updates-and-video</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/12/07/rhogallery-updates-and-video.html&quot;&gt;RhoGallery Updates and Video&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;We just pushed up some enhancements and several bugfixes to the RhoGallery.  Please feel free to &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; with your thoughts and suggestions on RhoGallery.  We'd love to hear it!&lt;/p&gt;
+&lt;p&gt;We just pushed up some enhancements and several bugfixes to the RhoGallery.  Please feel free to &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; with your thoughts and suggestions on RhoGallery.  We&amp;#39;d love to hear it!&lt;/p&gt;
 
-&lt;p&gt;Also, in case you missed the webinar on Friday, here's Brian's webinar demonstrating RhoGallery management:&lt;/p&gt;
+&lt;p&gt;Also, in case you missed the webinar on Friday, here&amp;#39;s Brian&amp;#39;s webinar demonstrating RhoGallery management:&lt;/p&gt;
 
 &lt;iframe src=&quot;http://player.vimeo.com/video/17457250?byline=0&amp;amp;portrait=0&amp;amp;color=de0909&quot; width=&quot;450&quot; height=&quot;253&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
 </content>
  </entry>
  
@@ -240,7 +273,6 @@ consumer.save
 &lt;li&gt;automatic provisioning of appropriate apps for end users&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;p&gt;To get started, create a Gallery and upload or link to one or more apps. For each app upload one or more builds for various smartphones. These can be from:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -248,7 +280,6 @@ consumer.save
 &lt;li&gt;from RhoHub builds that you have made&lt;/li&gt;
 &lt;li&gt;from some external remote URL (note that they do not have to have been built with Rhodes or even built by your own enterprise).&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;p&gt;Now invite some Consumers (a term to refer to “end users” or “enterprise workers”) to that Gallery. Those “consumers” or users will then receive SMSes or emails with a link to install the RhoGallery app. After installing they can then download the apps to their device. RhoGallery is included with each RhoHub subscription level (e.g. $99 per month for 100 devices, and $499 for 1000 devices).&lt;/p&gt;
 
@@ -265,7 +296,7 @@ consumer.save
    <id>/2010/10/21/rhohub-ie-support</id>
    <content type="html">&lt;h1&gt;&lt;a href=&quot;/2010/10/21/rhohub-ie-support.html&quot;&gt;RhoHub now supports IE 8+&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;We just pushed up support for IE 8 and IE 9 beta, so if you're an IE user we encourage you to give it a try.  Now on Windows you can use RhoHub with any major browser (IE, Firefox, Chrome, Safari).  In addition to the recently added &lt;a href=&quot;http://blog.rhohub.com/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html&quot;&gt;iOS build support&lt;/a&gt;, we hope this makes your RhoHub Windows experience more comfortable.  As always please &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; if you like.&lt;/p&gt;
+&lt;p&gt;We just pushed up support for IE 8 and IE 9 beta, so if you&amp;#39;re an IE user we encourage you to give it a try.  Now on Windows you can use RhoHub with any major browser (IE, Firefox, Chrome, Safari).  In addition to the recently added &lt;a href=&quot;http://blog.rhohub.com/2010/09/30/rhohub-adds-iphone-ipad-build-capability.html&quot;&gt;iOS build support&lt;/a&gt;, we hope this makes your RhoHub Windows experience more comfortable.  As always please &lt;a href=&quot;mailto:support@rhohub.com&quot;&gt;send us feedback&lt;/a&gt; if you like.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://img.skitch.com/20101015-xxdmxut7c9hpimn163t599c8y.png&quot;/&gt;&lt;/p&gt;
 </content>
@@ -280,7 +311,7 @@ consumer.save
 
 &lt;p&gt;&lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;&lt;img src=&quot;http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Welcome to the new RhoHub blog!  We'll use this area for new RhoHub features and maintenance details (in addition to our realtime status on &lt;a href=&quot;http://twitter.com/rhohub&quot;&gt;twitter&lt;/a&gt;). Let us know what you think!  We're using &lt;a href=&quot;http://github.com/mojombo/jekyll&quot;&gt;jekyll&lt;/a&gt;, and you can find the source for this blog on &lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;the github project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Welcome to the new RhoHub blog!  We&amp;#39;ll use this area for new RhoHub features and maintenance details (in addition to our realtime status on &lt;a href=&quot;http://twitter.com/rhohub&quot;&gt;twitter&lt;/a&gt;). Let us know what you think!  We&amp;#39;re using &lt;a href=&quot;http://github.com/mojombo/jekyll&quot;&gt;jekyll&lt;/a&gt;, and you can find the source for this blog on &lt;a href=&quot;http://github.com/rhomobile/blog.rhohub.com&quot;&gt;the github project&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We hope you like it!&lt;/p&gt;
 </content>

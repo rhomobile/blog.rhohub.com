@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>New Blog!</title>
+	<title>Git SSH access over HTTPS port</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
@@ -82,19 +82,40 @@
 
 <div class="post">
 	<div class="date">
-		<span class="month">October</span>
-		<span class="day">20</span>
-		<span>2010</span>
+		<span class="month">June</span>
+		<span class="day">25</span>
+		<span>2012</span>
 	</div><!-- END date -->
 
 	<div class="post_content">
-	   <h1><a href="/2010/10/20/new-blog-site.html">New Blog!</a></h1>
+	   <h1><a href="/2012/06/25/git-ssh-access-over-https-port.html">Git SSH access over HTTPS port</a></h1>
 
-<p><a href="http://github.com/rhomobile/blog.rhohub.com"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/></a></p>
+<p>We are happy to announce SSH git access over port 443 (HTTPS). If you have trouble accessing your repositories hosted on git.rhohub.com over port 22 (the default ssh port) due to a firewall or proxy limitation, you can now clone and push using firewall.git.rhohub.com on port 443 instead.  </p>
 
-<p>Welcome to the new RhoHub blog!  We&#39;ll use this area for new RhoHub features and maintenance details (in addition to our realtime status on <a href="http://twitter.com/rhohub">twitter</a>). Let us know what you think!  We&#39;re using <a href="http://github.com/mojombo/jekyll">jekyll</a>, and you can find the source for this blog on <a href="http://github.com/rhomobile/blog.rhohub.com">the github project</a>.</p>
+<h2>Testing</h2>
 
-<p>We hope you like it!</p>
+<p>To test connectivity, run the following command:</p>
+<div class="highlight"><pre><code class="text">$ ssh -T -p 443 git@firewall.git.rhohub.com
+</code></pre>
+</div>
+<div class="highlight"><pre><code class="text">Empty git command...
+</code></pre>
+</div>
+
+<h2>Use port 443 by default</h2>
+
+<p>To make the changes permanent, create or edit the file <code>~/.ssh/config</code> and add the following:</p>
+<div class="highlight"><pre><code class="text">Host git.rhohub.com
+</code></pre>
+</div>
+<div class="highlight"><pre><code class="text">    Hostname firewall.git.rhohub.com
+</code></pre>
+</div>
+<div class="highlight"><pre><code class="text">    Port 443
+</code></pre>
+</div>
+
+<p>For more information about using SSH over port 443 and the rationale behind this setup, please see the excellent <a href="https://help.github.com/articles/using-ssh-over-the-https-port">GitHub guide</a>.</p>
 
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

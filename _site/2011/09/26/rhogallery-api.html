@@ -90,43 +90,43 @@
 	<div class="post_content">
 	   <h1><a href="/2011/09/26/rhogallery-api.html">Introducing the RhoGallery API</a></h1>
 
-<p>Since we <a href="http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html">launched RhoGallery last year</a>,  one of the more tedious parts of the system was consumer and group management.  That's why today we're excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We're also releasing a companion ruby client you can find <a href="https://github.com/rhomobile/rhogallery-api">on github</a>.</p>
+<p>Since we <a href="http://blog.rhohub.com/2010/11/09/rhogallery-the-enterprise-app-store.html">launched RhoGallery last year</a>,  one of the more tedious parts of the system was consumer and group management.  That&#39;s why today we&#39;re excited to announce the RhoGallery API.  Now your gallery consumers and groups can be managed through a simple REST API.  We&#39;re also releasing a companion ruby client you can find <a href="https://github.com/rhomobile/rhogallery-api">on github</a>.  </p>
 
 <p>Getting started with the RhoGallery API from ruby is simple:</p>
+<div class="highlight"><pre><code class="text">$ gem install rhogallery
 
-<pre><code>$ gem install rhogallery
-
-require 'rhogallery'
+require &#39;rhogallery&#39;
 </code></pre>
+</div>
 
 <p>Next, find your RhoHub API token on your profile page:</p>
 
 <p><img src="https://img.skitch.com/20110926-k69arfxwk7mmmjjhagjqkwee2k.png"  width="800"/></p>
 
 <p>Then, initialize the RhoGallery API with your username and token:</p>
-
-<pre><code>RhoGallery.credentials = {:username =&gt; 'lars', :token =&gt; '4133af952fe67aba3ec23f73264547398225bad22a23a0000d'}
+<div class="highlight"><pre><code class="text">RhoGallery.credentials = {:username =&gt; &#39;lars&#39;, :token =&gt; &#39;4133af952fe67aba3ec23f73264547398225bad22a23a0000d&#39;}
 </code></pre>
+</div>
 
-<p>That's it!  Now you can create,read,update or delete RhoGallery consumers and groups:</p>
-
-<pre><code>RhoGallery::Consumer.find_all
-    =&gt; [{"name":"John Doe","devices":["ios","android","blackberry"],"deactivated_id":null,
-            "created_at":"2011-01-14T17:49:42Z","cell":"+555555",
-            "updated_at":"2011-06-21T21:14:12Z",
-            "tags":"","deleted":false,"password":"f3df5b5853c26e9b664262a5f590df8d",
-            "login":"john","invited":true,
-            "email":"john@doe.com","active":true}]
+<p>That&#39;s it!  Now you can create,read,update or delete RhoGallery consumers and groups:</p>
+<div class="highlight"><pre><code class="text">RhoGallery::Consumer.find_all
+    =&gt; [{&quot;name&quot;:&quot;John Doe&quot;,&quot;devices&quot;:[&quot;ios&quot;,&quot;android&quot;,&quot;blackberry&quot;],&quot;deactivated_id&quot;:null,
+            &quot;created_at&quot;:&quot;2011-01-14T17:49:42Z&quot;,&quot;cell&quot;:&quot;+555555&quot;,
+            &quot;updated_at&quot;:&quot;2011-06-21T21:14:12Z&quot;,
+            &quot;tags&quot;:&quot;&quot;,&quot;deleted&quot;:false,&quot;password&quot;:&quot;f3df5b5853c26e9b664262a5f590df8d&quot;,
+            &quot;login&quot;:&quot;john&quot;,&quot;invited&quot;:true,
+            &quot;email&quot;:&quot;john@doe.com&quot;,&quot;active&quot;:true}]
 
 
 consumer = RhoGallery::Consumer.new({
-    :login =&gt; "some_login", :name =&gt; "some name", :cell =&gt; "+55555", :email =&gt; "email@email.com"
+    :login =&gt; &quot;some_login&quot;, :name =&gt; &quot;some name&quot;, :cell =&gt; &quot;+55555&quot;, :email =&gt; &quot;email@email.com&quot;
 })
-=&gt; #&lt;RhoGallery::Consumer:0x1018881a8 @attributes={:login =&gt; "some_login", :name =&gt; "some name", :cell =&gt; "+55555", :email =&gt; "email@email.com"}&gt;
+=&gt; #&lt;RhoGallery::Consumer:0x1018881a8 @attributes={:login =&gt; &quot;some_login&quot;, :name =&gt; &quot;some name&quot;, :cell =&gt; &quot;+55555&quot;, :email =&gt; &quot;email@email.com&quot;}&gt;
 
 consumer.save
 =&gt; true
 </code></pre>
+</div>
 
 <p>Complete documentation is available on the <a href="https://github.com/rhomobile/rhogallery-api#readme">RhoGallery API github project</a>.</p>
 
