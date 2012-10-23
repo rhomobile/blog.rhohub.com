@@ -4,11 +4,26 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2012-06-25T16:22:25-07:00</updated>
+ <updated>2012-10-23T14:45:22-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>Announcing Cedar Stack Support and Sunsetting RhoSync Application Deployments</title>
+   <link href="/2012/10/23/default-cedar-stack-and-sunsetting-support-for-new-rhosync-deployments.html"/>
+   <updated>2012-10-23T00:00:00-07:00</updated>
+   <id>/2012/10/23/default-cedar-stack-and-sunsetting-support-for-new-rhosync-deployments</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/10/23/default-cedar-stack-and-sunsetting-support-for-new-rhosync-deployments.html&quot;&gt;Announcing Cedar Stack Support and Sunsetting RhoSync Application Deployments&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;RhoSync was officially deprecated last year as the new product, &lt;a href=&quot;http://www.motorola.com/Business/US-EN/Business+Product+and+Services/Software+and+Applications/RhoMobile+Suite/RhoConnect&quot;&gt;RhoConnect&lt;/a&gt; was launched.  RhoHub now deploys all new applications to the &lt;a href=&quot;https://devcenter.heroku.com/articles/cedar&quot;&gt;Heroku Cedar Stack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are also now officially sunsetting deployments of RhoSync on RhoHub in line with the removal of &lt;a href=&quot;https://devcenter.heroku.com/articles/bamboo&quot;&gt;Heroku&amp;#39;s Ruby 1.8 Bamboo Stack&lt;/a&gt;.  If you already have a deployed RhoSync application, you will now see a warning indicating that the application cannot be un-deployed and re-deployed to the same stack.&lt;/p&gt;
+
+&lt;p&gt;We strongly encourage you to &lt;a href=&quot;http://docs.rhomobile.com/rhoconnect/migration&quot;&gt;migrate your RhoSync app to RhoConnect&lt;/a&gt; if you haven&amp;#39;t already.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Git SSH access over HTTPS port</title>

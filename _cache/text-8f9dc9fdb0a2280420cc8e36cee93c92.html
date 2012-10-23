@@ -1,0 +1,18 @@
+<div class="highlight"><pre><code class="text">RhoGallery::Consumer.find_all
+    =&gt; [{&quot;name&quot;:&quot;John Doe&quot;,&quot;devices&quot;:[&quot;ios&quot;,&quot;android&quot;,&quot;blackberry&quot;],&quot;deactivated_id&quot;:null,
+            &quot;created_at&quot;:&quot;2011-01-14T17:49:42Z&quot;,&quot;cell&quot;:&quot;+555555&quot;,
+            &quot;updated_at&quot;:&quot;2011-06-21T21:14:12Z&quot;,
+            &quot;tags&quot;:&quot;&quot;,&quot;deleted&quot;:false,&quot;password&quot;:&quot;f3df5b5853c26e9b664262a5f590df8d&quot;,
+            &quot;login&quot;:&quot;john&quot;,&quot;invited&quot;:true,
+            &quot;email&quot;:&quot;john@doe.com&quot;,&quot;active&quot;:true}]
+
+
+consumer = RhoGallery::Consumer.new({
+    :login =&gt; &quot;some_login&quot;, :name =&gt; &quot;some name&quot;, :cell =&gt; &quot;+55555&quot;, :email =&gt; &quot;email@email.com&quot;
+})
+=&gt; #&lt;RhoGallery::Consumer:0x1018881a8 @attributes={:login =&gt; &quot;some_login&quot;, :name =&gt; &quot;some name&quot;, :cell =&gt; &quot;+55555&quot;, :email =&gt; &quot;email@email.com&quot;}&gt;
+
+consumer.save
+=&gt; true
+</code></pre>
+</div>
