@@ -4,11 +4,24 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2012-11-08T18:01:12-08:00</updated>
+ <updated>2012-12-03T09:11:24-08:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>RhoHub Editor Officially Sunsetted</title>
+   <link href="/2012/12/03/rhohub-editor-officially-sunsetted.html"/>
+   <updated>2012-12-03T00:00:00-08:00</updated>
+   <id>/2012/12/03/rhohub-editor-officially-sunsetted</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2012/12/03/rhohub-editor-officially-sunsetted.html&quot;&gt;RhoHub Editor Officially Sunsetted&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;As &lt;a href=&quot;/2012/11/08/sunsetting-rhohub-editor.html&quot;&gt;mentioned previously&lt;/a&gt;, the RhoHub Editor has been removed.&lt;/p&gt;
+
+&lt;p&gt;We encourage you to try out the &lt;a href=&quot;http://www.motorola.com/Business/US-EN/Business+Product+and+Services/Software+and+Applications/RhoMobile+Suite&quot;&gt;Motorola RhoMobile Suite&lt;/a&gt; for building &lt;a href=&quot;http://www.motorola.com/Business/US-EN/RhoMobile+Suite/Rhodes&quot;&gt;Rhodes&lt;/a&gt;, &lt;a href=&quot;http://www.motorola.com/Business/US-EN/Business+Product+and+Services/Software+and+Applications/RhoMobile+Suite/RhoElements&quot;&gt;RhoElements&lt;/a&gt; and &lt;a href=&quot;http://www.motorola.com/Business/US-EN/Business+Product+and+Services/Software+and+Applications/RhoMobile+Suite/RhoConnect&quot;&gt;RhoConnect&lt;/a&gt; applications.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Sunsetting the RhoHub Editor</title>

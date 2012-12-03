@@ -30,7 +30,6 @@ margin-bottom:20px;
 
 h1 a{
 	color:#333333;
-	text-decoration:none;
 	font-size:18px;
 }
 .line {
@@ -92,7 +91,7 @@ h1 a{
 #menu ul li a img.rss_feed{
 margin-right:5px;
 position:relative;
-top:3px;	
+top:3px;
 }
 #menu ul li a.current {
 	color:#FFFFFF;
@@ -190,7 +189,7 @@ p {
 	margin-bottom:15px;
 }
 #archive{
-	
+
 }
 #archive li{
 margin-bottom:10px;
