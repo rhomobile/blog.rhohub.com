@@ -167,6 +167,7 @@ div.post .date .day {
 }
 div.post .post_content a {
 	color:#333333;
+	text-decoration: underline;
 }
 div.post .post_content a.read_more {
 display:inline-block;
@@ -176,7 +177,7 @@ margin-top:10px;
 }
 div.post h2 a, div.post h1 a{
 	color:#333333;
-	text-decoration:none;
+	text-decoration:none!important;
 }
 div.layout_rs .container.left p {
 	margin-bottom:30px;
