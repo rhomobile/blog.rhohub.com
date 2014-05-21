@@ -4,11 +4,22 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2013-05-02T16:27:35-07:00</updated>
+ <updated>2014-05-21T15:44:11-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>iOS 7.1 Build Cloud Support</title>
+   <link href="/2014/05/21/ios-build-supports-7x.html"/>
+   <updated>2014-05-21T00:00:00-07:00</updated>
+   <id>/2014/05/21/ios-build-supports-7x</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2014/05/21/ios-build-supports-7x.html&quot;&gt;iOS 7.1 Build Cloud Support&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;We updated the iOS build machines today to iOS SDK 7.1.  Happy building!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>iOS 6.1 Build Cloud Support</title>
