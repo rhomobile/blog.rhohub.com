@@ -4,11 +4,46 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2014-07-24T18:14:06-07:00</updated>
+ <updated>2014-07-24T21:54:30-07:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>RhoMobile Suite 5.0 is Available</title>
+   <link href="/2014/07/23/rhomobile-suite-5.0-is-available.html"/>
+   <updated>2014-07-23T00:00:00-07:00</updated>
+   <id>/2014/07/23/rhomobile-suite-5.0-is-available</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2014/07/23/rhomobile-suite-5.0-is-available.html&quot;&gt;RhoMobile Suite 5.0 is Available&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;What is new in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RhoMobile Suite 5.0 features a completely redesigned licensing model.
+
+&lt;ul&gt;
+&lt;li&gt;From 5.0 you no longer purchase licenses to run on a specific device or that are tied to a specific application, instead licenses are purchased on a per-developer basis and integrated with the re-branded &lt;a href=&quot;http://rhomobile.com/&quot;&gt;Rhomobile.com&lt;/a&gt; website, the Rho cloud build solution.&lt;/li&gt;
+&lt;li&gt;Full details of the new license model are available from our &lt;a href=&quot;http://docs.rhomobile.com/en/edge/guide/licensing&quot;&gt;licensing doc&lt;/a&gt; which is definitely worth a quick read before getting started with 5.0.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You will need a developer account before you can start building your applications with 5.0.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Relaunch of our cloud build solution.
+
+&lt;ul&gt;
+&lt;li&gt;A complete redesign of our cloud build offering, now branded &lt;a href=&quot;http://rhomobile.com/&quot;&gt;Rhomobile.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;RhoMobileSuite 4.x builds can now be executed in the cloud.&lt;/li&gt;
+&lt;li&gt;Integration with RhoStudio and our new license model gives seamless transition between cloud building and building locally on your machine.&lt;/li&gt;
+&lt;li&gt;Performance enhancements to our cloud build will greatly decrease the length of time required to build most applications.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Runtime and startup performance improvements; you should notice an improvement in application performance when using applications built in RhoMobile Suite 5.0, particularly on Windows Mobile / CE.&lt;/li&gt;
+&lt;li&gt;We continue our beta support for Motorola Solutions&amp;#39; &amp;#39;SimulScan&amp;#39; product.&lt;/li&gt;
+&lt;li&gt;Support for a new device: MC32N0 CE7.0. Support for the Android variant of that platform will be available closer to that product launch.&lt;/li&gt;
+&lt;li&gt;New common API for &lt;a href=&quot;http://docs.rhomobile.com/en/5.0.0/api/audiocapture&quot;&gt;AudioCapture&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Support for Android KitKat consumer devices. Support for Motorola Solutions&amp;#39; KitKat devices will be available closer to those product launches.&lt;/li&gt;
+&lt;li&gt;Additional bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>iOS 7.1 Build Cloud Support</title>
