@@ -1,8 +1,8 @@
 development:
-    rhonav_host: http://rhohub.local
+    rhonav_host: http://rhomobile.local
 
 staging:
-    rhonav_host: https://appstaging.rhohub.com
+    rhonav_host: https://rmsstaging.rhomobile.com
 
 production:
-    rhonav_host: https://app.rhohub.com
+    rhonav_host: https://rms.rhomobile.com

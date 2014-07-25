@@ -1,4 +1,4 @@
-# blog.rhohub.com
+# blog.rhomobile.com
 
 ## How to manage posts
 

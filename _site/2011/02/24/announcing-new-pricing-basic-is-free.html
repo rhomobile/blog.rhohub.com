@@ -6,7 +6,7 @@
 	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
 	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
 	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="http://rhohub.com/javascripts/jquery.js"></script>
+        <script type="text/javascript" src="http://rhomobile.com/javascripts/jquery.js"></script>
 	<script type="text/javascript">
 	function Set_Cookie( name, value, expires, path, domain, secure )
 	{
@@ -58,13 +58,13 @@
 		}
 	}
 	function logout(){
-		Set_Cookie( 'rho_user', '0', '', '/', '.rhohub.com', '' );
-		window.location = "https://app.rhohub.com/logout";
+		Set_Cookie( 'rho_user', '0', '', '/', '.rhomobile.com', '' );
+		window.location = "https://rms.rhomobile.com/logout";
 	}
         jQuery(document).ready(function($) {
            $('#blog').unbind('click');
            $('#blog').bind('click',function(){
-               location.replace('http://blog.rhohub.com');
+               location.replace('http://blog.rhomobile.com');
            });
         });
 	</script>
