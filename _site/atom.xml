@@ -4,11 +4,26 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2014-07-24T21:54:30-07:00</updated>
+ <updated>2015-01-26T15:28:45-08:00</updated>
  <id></id>
 
  
  
+ 
+ <entry>
+   <title>RhoMobile Github Support</title>
+   <link href="/2015/01/26/rhomobile-github-support.html"/>
+   <updated>2015-01-26T00:00:00-08:00</updated>
+   <id>/2015/01/26/rhomobile-github-support</id>
+   <content type="html">&lt;h1&gt;&lt;a href=&quot;/2015/01/26/rhomobile-github-support.html&quot;&gt;RhoMobile Github Support&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Today we are happy to announce support for building from Github in Rhomobile!&lt;/p&gt;
+
+&lt;p&gt;Users should now be able to build their Rhomobile applications using their Github repositories. This works for both public Github repositories, and even private Github repositories (note: a few extra steps are required for private repositories). We really hope this decreases the uncertainty of using Rhomobile and helps users build more reliably. &lt;/p&gt;
+
+&lt;p&gt;We hope you enjoy the benefits of this new capability.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>RhoMobile Suite 5.0 is Available</title>
