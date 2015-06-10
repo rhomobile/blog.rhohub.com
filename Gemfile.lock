@@ -32,3 +32,6 @@ DEPENDENCIES
   liquid (= 2.1.3)
   rack-jekyll
   redcarpet
+
+BUNDLED WITH
+   1.10.3

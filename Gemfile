@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby "2.1.1"
+ruby "2.1.6"
 
 gem "liquid", "2.1.3"
 gem "jekyll", "~>0.7.0"
