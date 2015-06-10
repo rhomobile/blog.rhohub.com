@@ -8,6 +8,6 @@ title: RhoMobile Github Support
 
 Today we are happy to announce support for building from Github in Rhomobile!
 
-Users should now be able to build their Rhomobile applications using their Github repositories. This works for both public Github repositories, and even private Github repositories (note: a few extra steps are required for private repositories). We really hope this decreases the uncertainty of using Rhomobile and helps users build more reliably. 
+Users can now build their Rhomobile applications using their Github repositories. This works for both public Github repositories, and even private Github repositories (note: a few extra steps are required for private repositories). Building from your public or private Github repositories provides a more reliable build experience. 
 
 We hope you enjoy the benefits of this new capability.
