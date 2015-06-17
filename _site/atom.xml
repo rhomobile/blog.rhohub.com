@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2015-06-10T23:52:46+05:30</updated>
+ <updated>2015-06-17T22:18:07+05:30</updated>
  <id></id>
 
  
@@ -20,6 +20,70 @@
 &lt;p&gt;Today we are happy to announce support for building from Github in Rhomobile!&lt;/p&gt;
 
 &lt;p&gt;Users can now build their Rhomobile applications using their Github repositories. This works for both public Github repositories, and even private Github repositories (note: a few extra steps are required for private repositories). Building from your public or private Github repositories provides a more reliable build experience. &lt;/p&gt;
+
+&lt;div class=&quot;article js-hide-during-search&quot;&gt;
+
+  &lt;h2&gt;Moving existing Rhohub repositories into github.com&lt;/h2&gt;
+
+  &lt;div class=&quot;article-body content-body wikistyle markdown-format&quot;&gt;
+    
+
+&lt;div class=&quot;intro&quot;&gt;
+
+&lt;p&gt;To move your exisiting rhohub repository to github and continue you&#39;r rhomobile builds, based on newly created github repository, you need to run a special clone command against your old rhohub repository and mirror-push to the newly created github repository.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;In the following cases, the repository you&#39;re trying to move -- like  
+&lt;br/&gt;
+&lt;code&gt;git@git.rhohub.com:username/rhohub_repository.git&lt;/code&gt;
+&lt;br/&gt;
+to
+&lt;br/&gt;
+&lt;code&gt;git@github.com:username/new_github_repository.git&lt;/code&gt; 
+&lt;br/&gt;
+&lt;br/&gt;
+first you have to create a new github repository in github.com.
+&lt;br/&gt;
+fo example , 
+&lt;code&gt;git@github.com:username/new_github_repository.git&lt;/code&gt; should already created and exist on github.com.
+&lt;br/&gt; See &quot;&lt;a href=&quot;https://help.github.com/articles/creating-a-new-repository&quot;&gt;Creating a new repository in github&lt;/a&gt;&quot; for more information.&lt;/p&gt;
+
+&lt;p&gt;Open up the command prompt, and type these commands:&lt;/p&gt;
+
+&lt;pre class=&quot;command-line&quot;&gt;
+
+&lt;span class=&quot;comment&quot;&gt;# Make a bare clone of your existing rhohub repository&lt;/span&gt;
+&lt;span class=&quot;command&quot;&gt;git clone --bare git@git.rhohub.com:username/rhohub_repository.git&lt;/span&gt;
+&lt;br/&gt;
+&lt;span class=&quot;command&quot;&gt;cd rhohub_repository.git&lt;/span&gt;
+&lt;br/&gt;
+&lt;span class=&quot;comment&quot;&gt;# Mirror-push to the new github repository&lt;/span&gt;
+&lt;span class=&quot;command&quot;&gt;git push --mirror git@github.com:username/new_github_repository.git&lt;/span&gt;
+&lt;br/&gt;
+&lt;span class=&quot;comment&quot;&gt;# Remove our old rhohub_repository&lt;/span&gt;
+&lt;span class=&quot;command&quot;&gt;cd ..&lt;/span&gt;
+&lt;span class=&quot;command&quot;&gt;rm -rf rhohub_repository.git&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;now you&amp;#39;r application source code moved to github successfully.
+now you have to update &amp;quot;new github url&amp;quot; in your existing aplication. 
+&lt;br/&gt;
+to do that, open your individual rhomobile application page.
+&lt;br/&gt;
+click &lt;span class=&quot;command&quot;&gt;&amp;quot;Change Git Source&amp;quot;&lt;span/&gt; button , copy that newly created github url 
+(ie ,&lt;span class=&quot;command&quot;&gt;&amp;quot;git@github.com:username/new&lt;em&gt;github&lt;/em&gt;repository.git&amp;quot;&lt;span/&gt; ) and paste in 
+&lt;span class=&quot;command&quot;&gt;&amp;quot;External Git URL&amp;quot;&lt;span/&gt; field , then save it. &lt;/p&gt;
+
+&lt;p&gt;now you have to configure github to accept rhohubbuild to read you repository.
+&lt;br/&gt;
+to do that click &lt;span class=&quot;command&quot;&gt;&amp;quot;Private Repo Setup&amp;quot;&lt;span/&gt; button and follow those instructions.
+&lt;br/&gt;
+&lt;span class=&quot;command&quot;&gt;thats all , now you can trigger builds &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;We hope you enjoy the benefits of this new capability.&lt;/p&gt;
 </content>
