@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RhoMobile Suite 5.2.2 is Available</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="/atom.xml" rel="alternate" title="RSS Feed" type="application/rss+xml" />
+	<link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" />        
+	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://rhomobile.com/javascripts/jquery.js"></script>
+	<script type="text/javascript">
+	function Set_Cookie( name, value, expires, path, domain, secure )
+	{
+		var today = new Date();
+		today.setTime( today.getTime() );
+
+		if ( expires )
+		{
+			expires = expires * 1000 * 60 * 60 * 24;
+		}
+		var expires_date = new Date( today.getTime() + (expires) );
+
+		document.cookie = name + "=" +escape( value ) +
+		( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+		( ( path ) ? ";path=" + path : "" ) +
+		( ( domain ) ? ";domain=" + domain : "" ) +
+		( ( secure ) ? ";secure" : "" );
+	}
+	
+	function Get_Cookie( check_name ) {
+
+		var a_all_cookies = document.cookie.split( ';' );
+		var a_temp_cookie = '';
+		var cookie_name = '';
+		var cookie_value = '';
+		var b_cookie_found = false;
+
+		for ( i = 0; i < a_all_cookies.length; i++ )
+		{
+			a_temp_cookie = a_all_cookies[i].split( '=' );
+			cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+
+			if ( cookie_name == check_name )
+			{
+				b_cookie_found = true;
+				if ( a_temp_cookie.length > 1 )
+				{
+					cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+				}
+				return cookie_value;
+				break;
+			}
+			a_temp_cookie = null;
+			cookie_name = '';
+		}
+		if ( !b_cookie_found )
+		{
+			return null;
+		}
+	}
+	function logout(){
+		Set_Cookie( 'rho_user', '0', '', '/', '.rhomobile.com', '' );
+		window.location = "https://rms.rhomobile.com/logout";
+	}
+        jQuery(document).ready(function($) {
+           $('#blog').unbind('click');
+           $('#blog').bind('click',function(){
+               location.replace('http://blog.rhomobile.com');
+           });
+        });
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<div id="yield_container">
+					<div class="navigation" id="nav-above">
+		<div class="nav-previous"><a href="/"><span class="meta-nav">←</span> Back to Posts</a></div>
+		<div class="nav-next"></div>
+	</div>
+
+<div class="post">
+	<div class="date">
+		<span class="month">August</span>
+		<span class="day">25</span>
+		<span>2015</span>
+	</div><!-- END date -->
+
+	<div class="post_content">
+	   <h1><a href="/2015/08/25/rhomobile-suite-5.2.2-is-available.html">RhoMobile Suite 5.2.2 is Available</a></h1>
+
+<p>What is new in this release:</p>
+
+<ul>
+<li>RhoMobile Suite 5.2.2 features a completely redesigned licensing model.
+
+<ul>
+<li>From 5.2.2 you no longer purchase licenses to run on a specific device or that are tied to a specific application, instead licenses are purchased on a per-developer basis and integrated with the re-branded <a href="http://rhomobile.com/">Rhomobile.com</a> website, the Rho cloud build solution.</li>
+<li>Full details of the new license model are available from our <a href="http://docs.rhomobile.com/en/edge/guide/licensing">licensing doc</a> which is definitely worth a quick read before getting started with 5.2.2.</li>
+<li><strong>You will need a developer account before you can start building your applications with 5.2.</strong></li>
+</ul></li>
+<li>Relaunch of our cloud build solution.
+
+<ul>
+<li>A complete redesign of our cloud build offering, now branded <a href="http://rhomobile.com/">Rhomobile.com</a>.</li>
+<li>RhoMobileSuite 4.x builds can now be executed in the cloud.</li>
+<li>Integration with RhoStudio and our new license model gives seamless transition between cloud building and building locally on your machine.</li>
+<li>Performance enhancements to our cloud build will greatly decrease the length of time required to build most applications.</li>
+</ul></li>
+<li>Runtime and startup performance improvements; you should notice an improvement in application performance when using applications built in RhoMobile Suite 5.2.2, particularly on Windows Mobile / CE.</li>
+<li>We continue our beta support for Motorola Solutions&#39; &#39;SimulScan&#39; product.</li>
+<li>Support for a new device: MC32N0 CE7.0. Support for the Android variant of that platform will be available closer to that product launch.</li>
+<li>New common API for <a href="http://docs.rhomobile.com/en/5.2.2/api/audiocapture">AudioCapture</a>.</li>
+<li>Support for Android KitKat consumer devices. Support for Motorola Solutions&#39; KitKat devices will be available closer to those product launches.</li>
+<li>Additional bug fixes.</li>
+</ul>
+
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://rhohubblog.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rhohubblog">comments powered by Disqus.</a></noscript>
+	</div><!--END post_content -->
+</div> 
+			</div>
+		</div><!--END wrapper -->
+	</div><!-- end container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-5554280-3");
+	pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'rhohubblog';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://disqus.com/forums/rhohubblog/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+</body>
+</html>
